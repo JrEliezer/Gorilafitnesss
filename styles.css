@@ -687,11 +687,14 @@ section:nth-child(even) .btn-primary:hover {
     border-radius: 12px;
     padding: 1.5rem;
     border: 1px solid rgba(255,255,255,0.05);
+    overflow: hidden;
 }
 
 .modal-image-area img {
     max-width: 100%;
     max-height: 220px;
+    width: auto;
+    height: auto;
     object-fit: contain;
     filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.6));
 }
