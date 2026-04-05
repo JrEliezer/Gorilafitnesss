@@ -5,19 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gorila Fitness | Catálogo de Vendas Premium</title>
+    <meta name="description"
+        content="Catálogo premium de suplementos Gorila Fitness. Pré-treinos, proteínas, creatinas e pastas de amendoim gourmet. Peça pelo WhatsApp!">
+
+    <!-- Open Graph / WhatsApp Preview -->
+    <meta property="og:title" content="Gorila Fitness | Catálogo de Vendas Premium">
+    <meta property="og:description"
+        content="Suplementos de alta performance para treinos de elite. Confira nosso catálogo!">
+    <meta property="og:image" content="assets/logo.png">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap"
+        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/lucide@0.344.0"></script>
 </head>
 
 <body>
 
     <!-- Global Watermark -->
     <div class="watermark" style="background-image: url('assets/logo.png');"></div>
+
+    <!-- Section Navigation -->
+    <nav class="section-nav" aria-label="Navegação do catálogo">
+        <a href="#section-pretreinos" class="nav-dot active" aria-label="Pré-Treinos"
+            data-tooltip="Pré-Treinos"></a>
+        <a href="#section-proteinas" class="nav-dot" aria-label="Proteínas" data-tooltip="Proteínas"></a>
+        <a href="#section-saude" class="nav-dot" aria-label="Saúde" data-tooltip="Saúde"></a>
+        <a href="#section-pastas" class="nav-dot" aria-label="Pastas" data-tooltip="Pastas"></a>
+    </nav>
 
     <!-- Header Section -->
     <header class="catalog-header">
@@ -32,8 +54,8 @@
 
     <main class="catalog-container">
 
-        <!-- SECTION 1 -->
-        <section class="catalog-page">
+        <!-- SECTION 1: PRÉ-TREINOS -->
+        <section class="catalog-page" id="section-pretreinos">
             <div class="page-header">
                 <h2>COMBUSTÍVEL PARA SEU TREINO</h2>
                 <div class="glow-line green"></div>
@@ -41,85 +63,96 @@
             </div>
 
             <div class="product-grid">
-                <!-- Products will go here, dynamically or statically -->
                 <div class="product-card">
-                    <div class="img-wrapper"><img src="assets/img-ares.png" alt="Ares" class="product-img"
-                            loading="lazy" decoding="async"></div>
+                    <div class="img-wrapper"><img src="assets/img-ares.png" alt="Ares (Maçã Verde) 300g"
+                            class="product-img" loading="lazy" decoding="async"></div>
                     <h3>Ares (Maçã Verde) 300g</h3>
                     <p class="brand">DCX Nutrition</p>
+                    <span class="price-tag">Consulte o preço</span>
                 </div>
                 <div class="product-card">
                     <div class="img-wrapper"><img src="assets/bludemon.png" alt="Blue Demon" class="product-img"
                             loading="lazy" decoding="async"></div>
                     <h3>Blue Demon</h3>
                     <p class="brand">Pré-Treino</p>
+                    <span class="price-tag">Consulte o preço</span>
                 </div>
                 <div class="product-card">
-                    <div class="img-wrapper"><img src="assets/bagda.png" alt="BAGDA" class="product-img" loading="lazy"
-                            decoding="async"></div>
+                    <div class="img-wrapper"><img src="assets/bagda.png" alt="BAGDA (Frutas Amarelas) 420g"
+                            class="product-img" loading="lazy" decoding="async"></div>
                     <h3>BAGDA (Frutas Amarelas) 420g</h3>
                     <p class="brand">DCX Nutrition</p>
+                    <span class="price-tag">Consulte o preço</span>
                 </div>
                 <div class="product-card">
-                    <div class="img-wrapper"><img src="assets/nigthup.png" alt="Night Up" class="product-img"
-                            loading="lazy" decoding="async"></div>
+                    <div class="img-wrapper"><img src="assets/nigthup.png" alt="Night Up (Maçã Verde) 200g"
+                            class="product-img" loading="lazy" decoding="async"></div>
                     <h3>Night Up (Maçã Verde) 200g</h3>
                     <p class="brand">DCX Nutrition</p>
+                    <span class="price-tag">Consulte o preço</span>
                 </div>
                 <div class="product-card">
-                    <div class="img-wrapper"><img src="assets/bope.png" alt="BOPE" class="product-img" loading="lazy"
-                            decoding="async"></div>
+                    <div class="img-wrapper"><img src="assets/bope.png" alt="BOPE (Frutas Amarelas) 150g"
+                            class="product-img" loading="lazy" decoding="async"></div>
                     <h3>Pre treino BOPE (Frutas Amarelas) 150g</h3>
                     <p class="brand">Black Skull</p>
+                    <span class="price-tag">Consulte o preço</span>
                 </div>
                 <div class="product-card">
-                    <div class="img-wrapper"><img src="assets/bope.png" alt="BOPE" class="product-img" loading="lazy"
-                            decoding="async"></div>
+                    <div class="img-wrapper"><img src="assets/bope.png" alt="BOPE (Limão) 300g" class="product-img"
+                            loading="lazy" decoding="async"></div>
                     <h3>Pre treino BOPE (Limão) 300g</h3>
                     <p class="brand">Black Skull</p>
+                    <span class="price-tag">Consulte o preço</span>
                 </div>
                 <div class="product-card">
                     <div class="img-wrapper"><img src="assets/Dimethylex.png" alt="D-Methylex" class="product-img"
                             loading="lazy" decoding="async"></div>
                     <h3>D-Methylex</h3>
                     <p class="brand">Under Labz</p>
+                    <span class="price-tag">Consulte o preço</span>
                 </div>
                 <div class="product-card">
                     <div class="img-wrapper"><img src="assets/kratosblack.png" alt="Kratos Black" class="product-img"
                             loading="lazy" decoding="async"></div>
                     <h3>Kratos Black</h3>
                     <p class="brand">DCX Nutrition</p>
+                    <span class="price-tag">Consulte o preço</span>
                 </div>
                 <div class="product-card">
                     <div class="img-wrapper"><img src="assets/ThermoExtreme.png" alt="Thermo Extreme"
                             class="product-img" loading="lazy" decoding="async"></div>
                     <h3>Thermo Extreme</h3>
                     <p class="brand">DCX Nutrition</p>
+                    <span class="price-tag">Consulte o preço</span>
                 </div>
                 <div class="product-card">
-                    <div class="img-wrapper"><img src="assets/Thermo-Xcafeína.png" alt="Thermo-X" class="product-img"
-                            loading="lazy" decoding="async"></div>
+                    <div class="img-wrapper"><img src="assets/Thermo-Xcafeína.png" alt="Thermo-X com cafeína"
+                            class="product-img" loading="lazy" decoding="async"></div>
                     <h3>Thermo-X c/ cafeína (Frutas Amarelas)</h3>
                     <p class="brand">DCX Nutrition</p>
+                    <span class="price-tag">Consulte o preço</span>
                 </div>
                 <div class="product-card">
-                    <div class="img-wrapper"><img src="assets/Diuretic.png" alt="Diuretic" class="product-img"
-                            loading="lazy" decoding="async"></div>
+                    <div class="img-wrapper"><img src="assets/Diuretic.png" alt="Diuretic (Frutas Amarelas) 225g"
+                            class="product-img" loading="lazy" decoding="async"></div>
                     <h3>Diuretic (Frutas Amarelas) 225g</h3>
                     <p class="brand">DCX Nutrition</p>
+                    <span class="price-tag">Consulte o preço</span>
                 </div>
             </div>
 
             <div class="page-footer">
                 <a href="https://wa.me/5565999597133?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20pelo%20catálogo"
                     class="btn btn-primary" target="_blank">COMPRE AGORA</a>
-                <a href="#" class="btn btn-secondary">SAIBA MAIS</a>
+                <a href="https://wa.me/5565999597133?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20pré-treinos"
+                    class="btn btn-secondary" target="_blank">SAIBA MAIS</a>
                 <span class="page-number">01 / 04</span>
             </div>
         </section>
 
-        <!-- SECTION 2 -->
-        <section class="catalog-page">
+        <!-- SECTION 2: PROTEÍNAS -->
+        <section class="catalog-page" id="section-proteinas">
             <div class="page-header">
                 <h2>A CONSTRUÇÃO</h2>
                 <div class="glow-line purple"></div>
@@ -128,113 +161,130 @@
 
             <div class="product-grid">
                 <div class="product-card">
-                    <div class="img-wrapper"><img src="assets/WheyGourmet.png" alt="Whey Gourmet" class="product-img"
-                            loading="lazy" decoding="async"></div>
+                    <div class="img-wrapper"><img src="assets/WheyGourmet.png" alt="Whey 100% Gourmet (Choco Branco)"
+                            class="product-img" loading="lazy" decoding="async"></div>
                     <h3>Whey 100% Gourmet (Choco Branco) 900g</h3>
                     <p class="brand">DCX Nutrition</p>
+                    <span class="price-tag">Consulte o preço</span>
                 </div>
                 <div class="product-card">
-                    <div class="img-wrapper"><img src="assets/wheyhigh.png" alt="Whey High" class="product-img"
-                            loading="lazy" decoding="async"></div>
+                    <div class="img-wrapper"><img src="assets/wheyhigh.png" alt="Whey High (Morango)"
+                            class="product-img" loading="lazy" decoding="async"></div>
                     <h3>Whey High (Morango) 900g</h3>
                     <p class="brand">Absolut</p>
+                    <span class="price-tag">Consulte o preço</span>
                 </div>
                 <div class="product-card">
-                    <div class="img-wrapper"><img src="assets/wheyhigh.png" alt="Whey High" class="product-img"
-                            loading="lazy" decoding="async"></div>
+                    <div class="img-wrapper"><img src="assets/wheyhigh.png" alt="Whey High (Baunilha)"
+                            class="product-img" loading="lazy" decoding="async"></div>
                     <h3>Whey High (Baunilha) 900g</h3>
                     <p class="brand">Absolut</p>
+                    <span class="price-tag">Consulte o preço</span>
                 </div>
                 <div class="product-card">
-                    <div class="img-wrapper"><img src="assets/wheynutrata.png" alt="Whey Nutrata" class="product-img"
-                            loading="lazy" decoding="async"></div>
+                    <div class="img-wrapper"><img src="assets/wheynutrata.png" alt="Whey 100% Nutrata"
+                            class="product-img" loading="lazy" decoding="async"></div>
                     <h3>Whey 100% 900g</h3>
                     <p class="brand">Nutrata</p>
+                    <span class="price-tag">Consulte o preço</span>
                 </div>
                 <div class="product-card">
                     <div class="img-wrapper"><img src="assets/wheyblackskull.png" alt="Whey Black Skull"
                             class="product-img" loading="lazy" decoding="async"></div>
                     <h3>Whey Black Skull 900g</h3>
                     <p class="brand">Black Skull</p>
+                    <span class="price-tag">Consulte o preço</span>
                 </div>
                 <div class="product-card">
-                    <div class="img-wrapper"><img src="assets/wheycrush.png" alt="Protein Crush" class="product-img"
-                            loading="lazy" decoding="async"></div>
+                    <div class="img-wrapper"><img src="assets/wheycrush.png" alt="Protein Crush (Chocobear)"
+                            class="product-img" loading="lazy" decoding="async"></div>
                     <h3>Protein Crush (Chocobear) 900g</h3>
                     <p class="brand">Under Labz</p>
+                    <span class="price-tag">Consulte o preço</span>
                 </div>
                 <div class="product-card">
-                    <div class="img-wrapper"><img src="assets/wheycrush.png" alt="Protein Crush" class="product-img"
-                            loading="lazy" decoding="async"></div>
+                    <div class="img-wrapper"><img src="assets/wheycrush.png" alt="Protein Crush (Dulce de Leche)"
+                            class="product-img" loading="lazy" decoding="async"></div>
                     <h3>Protein Crush (Dulce de Leche) 900g</h3>
                     <p class="brand">Under Labz</p>
+                    <span class="price-tag">Consulte o preço</span>
                 </div>
                 <div class="product-card">
-                    <div class="img-wrapper"><img src="assets/wheycrush.png" alt="Protein Crush" class="product-img"
-                            loading="lazy" decoding="async"></div>
+                    <div class="img-wrapper"><img src="assets/wheycrush.png" alt="Protein Crush (Strawbear Swiss)"
+                            class="product-img" loading="lazy" decoding="async"></div>
                     <h3>Protein Crush (Strawbear Swiss) 900g</h3>
                     <p class="brand">Under Labz</p>
+                    <span class="price-tag">Consulte o preço</span>
                 </div>
                 <div class="product-card">
-                    <div class="img-wrapper"><img src="assets/wheygrowup.png" alt="Mass Up Grow Up" class="product-img"
-                            loading="lazy" decoding="async"></div>
+                    <div class="img-wrapper"><img src="assets/wheygrowup.png" alt="Mass Up (Baunilha) 3kg"
+                            class="product-img" loading="lazy" decoding="async"></div>
                     <h3>Mass Up (Baunilha) 3kg</h3>
                     <p class="brand">Grow Up</p>
+                    <span class="price-tag">Consulte o preço</span>
                 </div>
                 <div class="product-card">
-                    <div class="img-wrapper"><img src="assets/wheygrowup.png" alt="Mass Up Grow Up" class="product-img"
-                            loading="lazy" decoding="async"></div>
+                    <div class="img-wrapper"><img src="assets/wheygrowup.png" alt="Mass Up (Morango) 3kg"
+                            class="product-img" loading="lazy" decoding="async"></div>
                     <h3>Mass Up (Morango) 3kg</h3>
                     <p class="brand">Grow Up</p>
+                    <span class="price-tag">Consulte o preço</span>
                 </div>
                 <div class="product-card">
-                    <div class="img-wrapper"><img src="assets/creatinadcx.png" alt="Creatina DCX" class="product-img"
-                            loading="lazy" decoding="async"></div>
+                    <div class="img-wrapper"><img src="assets/creatinadcx.png" alt="Creatina 100% Pura 100g"
+                            class="product-img" loading="lazy" decoding="async"></div>
                     <h3>Creatina 100% Pura 100g</h3>
                     <p class="brand">DCX Nutrition</p>
+                    <span class="price-tag">Consulte o preço</span>
                 </div>
                 <div class="product-card">
-                    <div class="img-wrapper"><img src="assets/creatinadcx.png" alt="Creatina DCX" class="product-img"
-                            loading="lazy" decoding="async"></div>
+                    <div class="img-wrapper"><img src="assets/creatinadcx.png" alt="Creatina 100% Pura 300g"
+                            class="product-img" loading="lazy" decoding="async"></div>
                     <h3>Creatina 100% Pura 300g</h3>
                     <p class="brand">DCX Nutrition</p>
+                    <span class="price-tag">Consulte o preço</span>
                 </div>
                 <div class="product-card">
-                    <div class="img-wrapper"><img src="assets/refil.png" alt="Creatina Refil" class="product-img"
+                    <div class="img-wrapper"><img src="assets/refil.png" alt="Creatina Refil 500g" class="product-img"
                             loading="lazy" decoding="async"></div>
                     <h3>Creatina Refil 500g</h3>
                     <p class="brand">DCX Nutrition</p>
+                    <span class="price-tag">Consulte o preço</span>
                 </div>
                 <div class="product-card">
-                    <div class="img-wrapper"><img src="assets/creatinaskull.png" alt="Creatine Black Skull"
+                    <div class="img-wrapper"><img src="assets/creatinaskull.png" alt="Creatine Pure 300g Black Skull"
                             class="product-img" loading="lazy" decoding="async"></div>
                     <h3>Creatine Pure 300g</h3>
                     <p class="brand">Black Skull</p>
+                    <span class="price-tag">Consulte o preço</span>
                 </div>
                 <div class="product-card">
-                    <div class="img-wrapper"><img src="assets/betalanina.png" alt="Beta Alanina" class="product-img"
-                            loading="lazy" decoding="async"></div>
+                    <div class="img-wrapper"><img src="assets/betalanina.png" alt="Beta Alanina 100g"
+                            class="product-img" loading="lazy" decoding="async"></div>
                     <h3>Beta Alanina 100g</h3>
                     <p class="brand">Black Skull</p>
+                    <span class="price-tag">Consulte o preço</span>
                 </div>
                 <div class="product-card">
-                    <div class="img-wrapper"><img src="assets/creatinagrowup.png" alt="Creatina Grow Up"
+                    <div class="img-wrapper"><img src="assets/creatinagrowup.png" alt="Creatina 100% Pura Grow Up"
                             class="product-img" loading="lazy" decoding="async"></div>
                     <h3>Creatina 100% Pura 100g</h3>
                     <p class="brand">Grow Up</p>
+                    <span class="price-tag">Consulte o preço</span>
                 </div>
             </div>
 
             <div class="page-footer">
                 <a href="https://wa.me/5565999597133?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20pelo%20catálogo"
                     class="btn btn-primary" target="_blank">COMPRE AGORA</a>
-                <a href="#" class="btn btn-secondary">SAIBA MAIS</a>
+                <a href="https://wa.me/5565999597133?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20proteínas%20e%20creatinas"
+                    class="btn btn-secondary" target="_blank">SAIBA MAIS</a>
                 <span class="page-number">02 / 04</span>
             </div>
         </section>
 
-        <!-- SECTION 3 -->
-        <section class="catalog-page">
+        <!-- SECTION 3: SAÚDE -->
+        <section class="catalog-page" id="section-saude">
             <div class="page-header">
                 <h2>O OTIMIZADOR</h2>
                 <div class="glow-line green"></div>
@@ -247,53 +297,61 @@
                             loading="lazy" decoding="async"></div>
                     <h3>Mult X</h3>
                     <p class="brand">DCX Nutrition</p>
+                    <span class="price-tag">Consulte o preço</span>
                 </div>
                 <div class="product-card">
                     <div class="img-wrapper"><img src="assets/TestoGh.png" alt="Testi 1000GH" class="product-img"
                             loading="lazy" decoding="async"></div>
                     <h3>Testi 1000GH</h3>
                     <p class="brand">DCX Nutrition</p>
+                    <span class="price-tag">Consulte o preço</span>
                 </div>
                 <div class="product-card">
                     <div class="img-wrapper"><img src="assets/tadala.png" alt="T-DALA X" class="product-img"
                             loading="lazy" decoding="async"></div>
                     <h3>T-DALA X</h3>
                     <p class="brand">DCX Nutrition</p>
+                    <span class="price-tag">Consulte o preço</span>
                 </div>
                 <div class="product-card">
-                    <div class="img-wrapper"><img src="assets/colageno.png" alt="Colageno" class="product-img"
+                    <div class="img-wrapper"><img src="assets/colageno.png" alt="Colagen II" class="product-img"
                             loading="lazy" decoding="async"></div>
                     <h3>Colagen II Condroitina + Glucosamina</h3>
                     <p class="brand">Bionatus Pharma</p>
+                    <span class="price-tag">Consulte o preço</span>
                 </div>
                 <div class="product-card">
                     <div class="img-wrapper"><img src="assets/a-z.png" alt="Megapoli A-Z" class="product-img"
                             loading="lazy" decoding="async"></div>
                     <h3>Megapoli A-Z</h3>
                     <p class="brand">Bionatus Pharma</p>
+                    <span class="price-tag">Consulte o preço</span>
                 </div>
                 <div class="product-card">
-                    <div class="img-placeholder"><i data-lucide="activity"></i></div>
+                    <div class="img-placeholder"><i data-lucide="pill"></i><span>Foto em breve</span></div>
                     <h3>Actilcisteina 600mg + Vit C + D3 + ZINC</h3>
                     <p class="brand">Katigua</p>
+                    <span class="price-tag">Consulte o preço</span>
                 </div>
                 <div class="product-card">
-                    <div class="img-placeholder"><i data-lucide="activity"></i></div>
+                    <div class="img-placeholder"><i data-lucide="pill"></i><span>Foto em breve</span></div>
                     <h3>B12 Metilcobalamina</h3>
                     <p class="brand">Katigua</p>
+                    <span class="price-tag">Consulte o preço</span>
                 </div>
             </div>
 
             <div class="page-footer">
                 <a href="https://wa.me/5565999597133?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20pelo%20catálogo"
                     class="btn btn-primary" target="_blank">COMPRE AGORA</a>
-                <a href="#" class="btn btn-secondary">SAIBA MAIS</a>
+                <a href="https://wa.me/5565999597133?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20suplementos%20de%20saúde"
+                    class="btn btn-secondary" target="_blank">SAIBA MAIS</a>
                 <span class="page-number">03 / 04</span>
             </div>
         </section>
 
-        <!-- SECTION 4 -->
-        <section class="catalog-page">
+        <!-- SECTION 4: PASTAS -->
+        <section class="catalog-page" id="section-pastas">
             <div class="page-header">
                 <h2>A RECOMPENSA</h2>
                 <div class="glow-line purple"></div>
@@ -302,56 +360,418 @@
 
             <div class="product-grid">
                 <div class="product-card">
-                    <div class="img-wrapper"><img src="assets/chocomix.png" alt="Choco Mix" class="product-img"
-                            loading="lazy" decoding="async"></div>
+                    <div class="img-wrapper"><img src="assets/chocomix.png" alt="Pasta Choco Mix 600g"
+                            class="product-img" loading="lazy" decoding="async"></div>
                     <h3>Pasta de Amendoim Choco Mix 600g</h3>
                     <p class="brand">DCX Nutrition</p>
+                    <span class="price-tag">Consulte o preço</span>
                 </div>
                 <div class="product-card">
-                    <div class="img-wrapper"><img src="assets/leiteempo.png" alt="Leite em Po" class="product-img"
-                            loading="lazy" decoding="async"></div>
+                    <div class="img-wrapper"><img src="assets/leiteempo.png" alt="Pasta Leite em Pó 600g"
+                            class="product-img" loading="lazy" decoding="async"></div>
                     <h3>Pasta de Amendoim Leite em Pó 600g</h3>
                     <p class="brand">DCX Nutrition</p>
+                    <span class="price-tag">Consulte o preço</span>
                 </div>
                 <div class="product-card">
-                    <div class="img-wrapper"><img src="assets/Chocokat.png" alt="Choco Kat" class="product-img"
-                            loading="lazy" decoding="async"></div>
+                    <div class="img-wrapper"><img src="assets/Chocokat.png" alt="Pasta Choco Kat 600g"
+                            class="product-img" loading="lazy" decoding="async"></div>
                     <h3>Pasta de Amendoim Choco Kat 600g</h3>
                     <p class="brand">DCX Nutrition</p>
+                    <span class="price-tag">Consulte o preço</span>
                 </div>
                 <div class="product-card">
-                    <div class="img-wrapper"><img src="assets/chocobueno.png" alt="Choco Bueno" class="product-img"
-                            loading="lazy" decoding="async"></div>
+                    <div class="img-wrapper"><img src="assets/chocobueno.png" alt="Pasta Choco Bueno 600g"
+                            class="product-img" loading="lazy" decoding="async"></div>
                     <h3>Pasta de Amendoim Choco Bueno 600g</h3>
                     <p class="brand">DCX Nutrition</p>
+                    <span class="price-tag">Consulte o preço</span>
                 </div>
                 <div class="product-card">
-                    <div class="img-placeholder"><i data-lucide="award"></i></div>
+                    <div class="img-placeholder"><i data-lucide="cookie"></i><span>Foto em breve</span></div>
                     <h3>Pasta de Amendoim Choco Bueno 250g</h3>
                     <p class="brand">DCX Nutrition</p>
+                    <span class="price-tag">Consulte o preço</span>
                 </div>
             </div>
 
             <div class="page-footer">
-                <div class="social-links">
-                    <a href="#"><i data-lucide="instagram"></i></a>
-                    <a href="#"><i data-lucide="facebook"></i></a>
-                    <a href="#"><i data-lucide="twitter"></i></a>
-                    <a href="#"><i data-lucide="youtube"></i></a>
-                </div>
-                <div>
-                    <a href="https://wa.me/5565999597133?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20pelo%20catálogo"
-                        class="btn btn-primary" target="_blank">COMPRE AGORA</a>
-                </div>
+                <a href="https://wa.me/5565999597133?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20pelo%20catálogo"
+                    class="btn btn-primary" target="_blank">COMPRE AGORA</a>
+                <a href="https://wa.me/5565999597133?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20as%20pastas%20de%20amendoim"
+                    class="btn btn-secondary" target="_blank">SAIBA MAIS</a>
                 <span class="page-number">04 / 04</span>
             </div>
         </section>
     </main>
 
-    <script>
-        lucide.createIcons();
-    </script>
+    <!-- Footer Semântico -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="https://instagram.com/gorila_suplementacao" target="_blank" aria-label="Siga no Instagram @gorila_suplementacao"><i data-lucide="instagram"></i></a>
+                    <a href="#" aria-label="Curta no Facebook"><i data-lucide="facebook"></i></a>
+                    <a href="#" aria-label="Siga no Twitter"><i data-lucide="twitter"></i></a>
+                    <a href="#" aria-label="Inscreva-se no YouTube"><i data-lucide="youtube"></i></a>
+                </div>
+                <a href="https://wa.me/5565999597133?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20pelo%20catálogo"
+                    class="btn btn-primary" target="_blank">COMPRE AGORA</a>
+                <p class="footer-text">© 2026 Gorila Fitness. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
 
+    <!-- Product Modal -->
+    <div class="product-modal-overlay" id="productModal">
+        <div class="product-modal">
+            <button class="modal-close" id="modalClose" aria-label="Fechar">&times;</button>
+            <div class="modal-body">
+                <div class="modal-image-area">
+                    <img id="modalImg" src="" alt="">
+                </div>
+                <div class="modal-info">
+                    <span class="modal-brand" id="modalBrand"></span>
+                    <h2 class="modal-title" id="modalTitle"></h2>
+                    <span class="modal-category" id="modalCategory"></span>
+                    <p class="modal-description" id="modalDesc"></p>
+                    <div class="modal-benefits" id="modalBenefits"></div>
+                    <a class="modal-cta" id="modalCta" href="#" target="_blank">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.79 23.492a.5.5 0 00.612.612l4.458-1.494A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.25 0-4.336-.65-6.102-1.768l-.426-.26-3.278 1.098 1.098-3.278-.26-.426A9.955 9.955 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+                        COMPRAR AGORA
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // ============ Product Descriptions Database ============
+        const productData = {
+            // === SEÇÃO 1: PRÉ-TREINOS E TERMOGÊNICOS ===
+            "Ares (Maçã Verde) 300g": {
+                category: "Pré-Treino",
+                description: "O Ares da DCX Nutrition é um pré-treino formulado para maximizar a energia, foco e pump muscular. Sua fórmula exclusiva NÃO contém Beta-Alanina, evitando a sensação de formigamento. Conta com L-Arginina para vasodilatação, Taurina para resistência, L-Tirosina para foco mental e Cafeína para energia explosiva. Rende aproximadamente 30 doses.",
+                benefits: ["Energia Explosiva", "Foco Mental", "Pump Muscular", "Sem Beta-Alanina"]
+            },
+            "Blue Demon": {
+                category: "Pré-Treino",
+                description: "O Blue Demon da DCX Nutrition é um pré-treino de alta potência com 400mg de cafeína por dose. Sua fórmula combina Beta-Alanina para resistência muscular, Arginina para vasodilatação e Tirosina para conexão mente-músculo. Ideal para treinos que exigem intensidade máxima e foco absoluto.",
+                benefits: ["400mg Cafeína", "Resistência", "Vasodilatação", "Foco Intenso"]
+            },
+            "BAGDA (Frutas Amarelas) 420g": {
+                category: "Pré-Treino",
+                description: "O Bagdá da DCX Nutrition é um pré-treino completo que proporciona energia explosiva, foco e resistência muscular. Sua fórmula contém Cafeína, Beta-Alanina, L-Arginina, Taurina e vitaminas do complexo B. Rende aproximadamente 60 doses e é livre de glúten e lactose.",
+                benefits: ["60 Doses", "Energia", "Foco", "Sem Glúten"]
+            },
+            "Night Up (Maçã Verde) 200g": {
+                category: "Pré-Treino Noturno",
+                description: "O Night Up da DCX Nutrition é o pré-treino ideal para quem treina à noite. Sua fórmula SEM CAFEÍNA contém 3000mg de Beta-Alanina, 1500mg de Arginina e 1000mg de Taurina, proporcionando vasodilatação e resistência sem prejudicar o sono. Adoçado com Stévia e livre de glúten.",
+                benefits: ["Sem Cafeína", "Treino Noturno", "Vasodilatação", "Sem Glúten"]
+            },
+            "Pre treino BOPE (Frutas Amarelas) 150g": {
+                category: "Pré-Treino",
+                description: "O B.O.P.E da Black Skull é um pré-treino formulado para aumentar a disposição e o rendimento em treinos de alta intensidade. Contém Cafeína, Creatina Monohidratada, Arginina e Taurina. Misture 1 colher de chá em 150ml de água, 30 minutos antes do treino. Não contém glúten.",
+                benefits: ["Com Creatina", "Energia", "Força", "Black Skull"]
+            },
+            "Pre treino BOPE (Limão) 300g": {
+                category: "Pré-Treino",
+                description: "O B.O.P.E da Black Skull é um pré-treino formulado para aumentar a disposição e o rendimento em treinos de alta intensidade. Contém Cafeína, Creatina Monohidratada, Arginina e Taurina. Versão 300g no sabor limão, rendendo o dobro de doses. Não contém glúten.",
+                benefits: ["Com Creatina", "Energia", "Rendimento Dobro", "Black Skull"]
+            },
+            "D-Methylex": {
+                category: "Termogênico",
+                description: "O Dimethylex da Under Labz é um termogênico em cápsulas com tecnologia Burn Matrix™. Contém 400mg de cafeína, extrato de laranja moro, L-carnitina, café verde, guaraná, picolinato de cromo e pimenta caiena. Atua na queima de gordura, aceleração do metabolismo, controle do apetite e como diurético.",
+                benefits: ["Queima de Gordura", "400mg Cafeína", "Inibidor de Apetite", "Diurético"]
+            },
+            "Kratos Black": {
+                category: "Termogênico",
+                description: "O Kratos Black da DCX Nutrition é um termogênico em cápsulas formulado com Extrato de Laranja Moro (500mg), Cafeína Anidra, Guaraná, Inositol, Pimenta, Gengibre, Canela e Coenzima Q10. Auxilia na aceleração do metabolismo, queima de gordura, energia e foco mental. Frasco com 60 cápsulas.",
+                benefits: ["Laranja Moro", "Metabolismo", "Definição", "60 Cápsulas"]
+            },
+            "Thermo Extreme": {
+                category: "Termogênico",
+                description: "O Thermo Extreme da DCX Nutrition é um termogênico de alta potência formulado para acelerar o metabolismo e auxiliar na queima de gordura. Contém uma combinação de cafeína, extrato de chá verde, guaraná e pimenta caiena para máxima termogênese. Ideal para quem busca definição muscular e energia extra.",
+                benefits: ["Termogênico", "Queima de Gordura", "Energia", "Definição"]
+            },
+            "Thermo-X c/ cafeína (Frutas Amarelas)": {
+                category: "Termogênico 4 em 1",
+                description: "O Thermo-X da DCX Nutrition é um suplemento multifuncional 4 em 1: emagrecedor, diurético, inibidor de apetite e pré-treino. Sua fórmula com 27 ingredientes inclui Cafeína, Café Verde, Guaraná, Pimenta Caiena, L-Tirosina, Taurina, Psyllium e Coenzima Q10. Disponível nas versões com e sem cafeína.",
+                benefits: ["4 em 1", "27 Ingredientes", "Diurético", "Inibidor de Apetite"]
+            },
+            "Diuretic (Frutas Amarelas) 225g": {
+                category: "Diurético",
+                description: "O Diuretic da DCX Nutrition é um suplemento em pó desenvolvido para auxiliar na eliminação da retenção de líquidos. Formulado com Chá Verde, Carqueja, Guaraná, Erva-Mate, Gengibre, Alecrim e Sálvia — diuréticos naturais que ajudam na definição corporal e redução do inchaço. Sem glúten.",
+                benefits: ["Diurético Natural", "Anti-Inchaço", "Definição", "Sem Glúten"]
+            },
+
+            // === SEÇÃO 2: PROTEÍNAS E CREATINAS ===
+            "Whey 100% Gourmet (Choco Branco) 900g": {
+                category: "Whey Protein",
+                description: "O Whey 100% Gourmet da DCX Nutrition é uma proteína concentrada (WPC) com matéria-prima importada. Fornece 20g de proteína por dose, além de 3,3g de Glutamina e 4,7g de BCAA naturais. Adoçado com Stévia e sem glúten. Foco em sabor premium gourmet com alta performance nutricional.",
+                benefits: ["20g Proteína", "BCAA 4,7g", "Glutamina", "Sem Glúten"]
+            },
+            "Whey High (Morango) 900g": {
+                category: "Whey Protein",
+                description: "O Whey High Protein da Absolut Nutrition oferece 23g de proteína por dose com 3,6g de BCAA naturais. Enriquecido com Glutamina Peptídeo para reparação muscular e suporte imunológico. Fórmula livre de soja, ideal para o pós-treino ou complementação proteica ao longo do dia.",
+                benefits: ["23g Proteína", "BCAA 3,6g", "Glutamina Peptídeo", "Sem Soja"]
+            },
+            "Whey High (Baunilha) 900g": {
+                category: "Whey Protein",
+                description: "O Whey High Protein da Absolut Nutrition na versão baunilha oferece 23g de proteína por dose com 3,6g de BCAA naturais. Enriquecido com Glutamina Peptídeo para reparação muscular. Versátil para receitas, shakes e consumo direto no pós-treino.",
+                benefits: ["23g Proteína", "BCAA 3,6g", "Versatilidade", "Recuperação"]
+            },
+            "Whey 100% 900g": {
+                category: "Whey Protein",
+                description: "O Whey 100% da Nutrata é uma proteína concentrada do soro do leite de alta qualidade. Produzido com matéria-prima premium, fornece um excelente perfil de aminoácidos essenciais para auxiliar na recuperação muscular e no ganho de massa magra. Disponível em diversos sabores.",
+                benefits: ["Alta Qualidade", "Aminoácidos Essenciais", "Massa Magra", "Nutrata"]
+            },
+            "Whey Black Skull 900g": {
+                category: "Whey Protein",
+                description: "O Whey Protein da Black Skull é uma das referências do mercado de suplementos. Proteína concentrada de alta absorção que fornece aminoácidos essenciais para construção e recuperação muscular pós-treino. Marca reconhecida mundialmente pela qualidade e tradição.",
+                benefits: ["Marca Premium", "Alta Absorção", "Recuperação", "Tradição"]
+            },
+            "Protein Crush (Chocobear) 900g": {
+                category: "Whey Protein",
+                description: "O Protein Crush da Under Labz combina WPC e MPC para um perfil de aminoácidos robusto. Enriquecido com Coenzima Q10, Zinco, Vitaminas do Complexo B e Biotina. Avaliado pelo método DIAAS de alta aproveitamento proteico. Sabor gourmet Chocobear com textura cremosa e ótima dissolução.",
+                benefits: ["Coenzima Q10", "Alto DIAAS", "Sabor Gourmet", "Zinco + Vit B"]
+            },
+            "Protein Crush (Dulce de Leche) 900g": {
+                category: "Whey Protein",
+                description: "O Protein Crush da Under Labz na versão Dulce de Leche combina WPC e MPC enriquecido com Coenzima Q10 para energia celular, Zinco para imunidade e vitaminas do Complexo B. Sabor irresistível de doce de leite com textura cremosa e excelente dissolução.",
+                benefits: ["Coenzima Q10", "Sabor Dulce de Leche", "Zinco", "Biotina"]
+            },
+            "Protein Crush (Strawbear Swiss) 900g": {
+                category: "Whey Protein",
+                description: "O Protein Crush da Under Labz na versão Strawbear Swiss traz o sabor premium de morango suíço com a mesma fórmula avançada: WPC + MPC enriquecido com Coenzima Q10, Zinco e Vitaminas B. Alta taxa de aproveitamento proteico pelo método DIAAS.",
+                benefits: ["Coenzima Q10", "Sabor Premium", "Alto DIAAS", "Vitaminas B"]
+            },
+            "Mass Up (Baunilha) 3kg": {
+                category: "Hipercalórico",
+                description: "O Mass Up da Grow Up é um hipercalórico desenvolvido para quem busca ganho de peso e massa muscular. Combina carboidratos de alta densidade calórica com proteínas de alto valor biológico (whey protein) e um mix de vitaminas e minerais. Ideal para ectomorfos e atletas com alto gasto calórico.",
+                benefits: ["Hipercalórico", "3kg", "Ganho de Massa", "Vitaminas"]
+            },
+            "Mass Up (Morango) 3kg": {
+                category: "Hipercalórico",
+                description: "O Mass Up da Grow Up na versão morango 3kg oferece alta densidade calórica para quem precisa de superávit energético. Formulado com carboidratos, whey protein e vitaminas. Prático para complementar a dieta de quem não consegue atingir as calorias necessárias apenas com alimentação sólida.",
+                benefits: ["Hipercalórico", "3kg", "Superávit Calórico", "Praticidade"]
+            },
+            "Creatina 100% Pura 100g": {
+                category: "Creatina",
+                description: "A Creatina 100% Pura da DCX Nutrition é creatina monohidratada de alta pureza. Auxilia no aumento da força, potência e volume muscular durante exercícios de alta intensidade. Formato de 100g ideal para quem quer conhecer o produto. Sem sabor, mistura facilmente em qualquer bebida.",
+                benefits: ["100% Pura", "Força", "Potência", "Fácil Dissolução"]
+            },
+            "Creatina 100% Pura 300g": {
+                category: "Creatina",
+                description: "A Creatina 100% Pura da DCX Nutrition em embalagem de 300g oferece melhor custo-benefício. Creatina monohidratada que auxilia no ganho de força, resistência e performance em treinos de alta intensidade. Formato econômico que rende aproximadamente 60 doses de 5g.",
+                benefits: ["300g Econômico", "60 Doses", "Força", "Performance"]
+            },
+            "Creatina Refil 500g": {
+                category: "Creatina",
+                description: "A Creatina Refil 500g da DCX Nutrition é a opção mais econômica para uso contínuo. Creatina monohidratada 100% pura em embalagem refil que rende aproximadamente 100 doses. Suplemento essencial para ganho de força, potência muscular e melhora da performance nos treinos.",
+                benefits: ["500g Refil", "100 Doses", "Melhor Custo", "Uso Contínuo"]
+            },
+            "Creatine Pure 300g": {
+                category: "Creatina",
+                description: "A Creatine Pure da Black Skull é creatina monohidratada com o selo de qualidade de uma das marcas mais reconhecidas do mundo. Auxilia no aumento da força, potência e massa muscular. Não contém glúten e é livre de qualquer aditivo. 300g de creatina pura.",
+                benefits: ["Black Skull", "Pura", "Sem Aditivos", "300g"]
+            },
+            "Beta Alanina 100g": {
+                category: "Aminoácido",
+                description: "A Beta Alanina da Black Skull é um aminoácido que auxilia no aumento da resistência muscular durante exercícios de alta intensidade. Atua na produção de carnosina, que reduz a acidez muscular e retarda a fadiga. Essencial para treinos longos e de alta repetição.",
+                benefits: ["Resistência", "Anti-Fadiga", "Carnosina", "Black Skull"]
+            },
+            "Creatina 100% Pura 100g|Grow Up": {
+                category: "Creatina",
+                description: "A Creatina 100% Pura da Grow Up é creatina monohidratada de alto grau de pureza. Auxilia no aumento de força e desempenho em treinos intensos. A creatina é o suplemento mais estudado e comprovado cientificamente para ganho de performance. Formato de 100g.",
+                benefits: ["100% Pura", "Cientificamente Comprovada", "Grow Up", "Força"]
+            },
+
+            // === SEÇÃO 3: SAÚDE E PERFORMANCE ===
+            "Mult X": {
+                category: "Multivitamínico",
+                description: "O Mult X da DCX Nutrition é um suplemento multivitamínico e multimineral completo, formulado para suprir as necessidades diárias de vitaminas e minerais. Ideal para atletas e praticantes de atividades físicas que necessitam de aporte nutricional extra para manter a saúde e a performance em dia.",
+                benefits: ["Multivitamínico", "Multi-Mineral", "Saúde Completa", "Performance"]
+            },
+            "Testi 1000GH": {
+                category: "Hormonal",
+                description: "O Testi 1000GH da DCX Nutrition é um suplemento formulado para auxiliar na otimização dos níveis hormonais de forma natural. Contém ingredientes que apoiam a produção de testosterona e hormônio do crescimento (GH), contribuindo para ganho de massa magra, força e disposição.",
+                benefits: ["Testosterona", "GH Natural", "Massa Magra", "Disposição"]
+            },
+            "T-DALA X": {
+                category: "Performance",
+                description: "O T-DALA X da DCX Nutrition é um suplemento desenvolvido para otimizar a performance masculina e o bem-estar geral. Sua fórmula atua no suporte à circulação sanguínea, energia e disposição. Indicado para homens que buscam melhorar a qualidade de vida e o desempenho físico.",
+                benefits: ["Performance", "Circulação", "Energia", "Bem-Estar"]
+            },
+            "Colagen II Condroitina + Glucosamina": {
+                category: "Articulações",
+                description: "O Colagen II da Bionatus Pharma combina Colágeno Tipo II, Condroitina e Glucosamina — três nutrientes essenciais para a saúde das articulações. Auxilia na manutenção da cartilagem, redução do desconforto articular e melhora da mobilidade. Ideal para atletas e pessoas com desgaste articular.",
+                benefits: ["Colágeno Tipo II", "Articulações", "Condroitina", "Mobilidade"]
+            },
+            "Megapoli A-Z": {
+                category: "Multivitamínico",
+                description: "O Megapoli A-Z da Bionatus Pharma é um suplemento polivitamínico e mineral completo, que fornece de A a Z tudo o que o corpo precisa. Contém vitaminas essenciais e minerais importantes para o sistema imunológico, metabolismo energético e saúde geral do organismo.",
+                benefits: ["Vitaminas A-Z", "Minerais", "Imunidade", "Saúde Geral"]
+            },
+            "Actilcisteina 600mg + Vit C + D3 + ZINC": {
+                category: "Imunidade",
+                description: "A Actilcisteina 600mg da Katigua é um suplemento que combina N-Acetilcisteína com Vitamina C, Vitamina D3 e Zinco. Essa combinação potente atua na proteção das células contra o estresse oxidativo, fortalecimento do sistema imunológico e suporte à saúde respiratória.",
+                benefits: ["Imunidade", "Antioxidante", "Vitamina D3", "Zinco"]
+            },
+            "B12 Metilcobalamina": {
+                category: "Vitamina",
+                description: "A B12 Metilcobalamina da Katigua é a forma mais biodisponível de Vitamina B12. Essencial para o metabolismo energético, formação de células vermelhas do sangue e funcionamento do sistema nervoso. Indicada especialmente para pessoas com dietas restritivas e veganos.",
+                benefits: ["Metilcobalamina", "Energia", "Sistema Nervoso", "Alta Absorção"]
+            },
+
+            // === SEÇÃO 4: PASTAS DE AMENDOIM ===
+            "Pasta de Amendoim Choco Mix 600g": {
+                category: "Pasta de Amendoim",
+                description: "A Pasta de Amendoim Choco Mix da DCX Nutrition é uma opção gourmet e nutritiva para quem quer aliar sabor e saúde. Rica em proteínas e gorduras boas do amendoim, com pedaços crocantes de chocolate. Ideal para café da manhã, pré-treino ou lanches intermediários. Zero açúcar adicionado.",
+                benefits: ["Proteínas", "Gorduras Boas", "Com Chocolate", "Gourmet"]
+            },
+            "Pasta de Amendoim Leite em Pó 600g": {
+                category: "Pasta de Amendoim",
+                description: "A Pasta de Amendoim Leite em Pó da DCX Nutrition combina a cremosidade do amendoim com o sabor irresistível de leite em pó. Rica em proteínas, fibras e gorduras saudáveis. Versátil para uso em receitas, smoothies, panquecas ou consumo direto. Fonte de energia para sua rotina.",
+                benefits: ["Sabor Leite em Pó", "Proteínas", "Fibras", "Versátil"]
+            },
+            "Pasta de Amendoim Choco Kat 600g": {
+                category: "Pasta de Amendoim",
+                description: "A Pasta de Amendoim Choco Kat da DCX Nutrition traz um sabor inspirado em chocolate com wafer, combinando amendoim moído com cacau e crocância. Rica em proteínas e gorduras boas, é perfeita para quem busca um lanche saudável sem abrir mão do sabor premium.",
+                benefits: ["Sabor Choco Kat", "Crocante", "Proteínas", "Gorduras Boas"]
+            },
+            "Pasta de Amendoim Choco Bueno 600g": {
+                category: "Pasta de Amendoim",
+                description: "A Pasta de Amendoim Choco Bueno 600g da DCX Nutrition é inspirada no sabor de chocolate com avelã. Unindo o poder nutricional do amendoim com o sabor gourmet de chocolate europeu. Rica em proteínas, gorduras boas e fibras. Ideal para dietas com foco em ganho de massa.",
+                benefits: ["Choco Bueno", "Avelã", "600g", "Ganho de Massa"]
+            },
+            "Pasta de Amendoim Choco Bueno 250g": {
+                category: "Pasta de Amendoim",
+                description: "A versão compacta de 250g da Pasta de Amendoim Choco Bueno da DCX Nutrition é perfeita para experimentar ou levar na bolsa. Mesmo sabor premium de chocolate com avelã, rica em proteínas e gorduras saudáveis. Formato prático para o dia a dia.",
+                benefits: ["Formato Prático", "250g", "Choco Bueno", "Para Levar"]
+            }
+        };
+
+        // ============ Modal Functionality ============
+        const modal = document.getElementById('productModal');
+        const modalClose = document.getElementById('modalClose');
+        const modalImg = document.getElementById('modalImg');
+        const modalBrand = document.getElementById('modalBrand');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalCategory = document.getElementById('modalCategory');
+        const modalDesc = document.getElementById('modalDesc');
+        const modalBenefits = document.getElementById('modalBenefits');
+        const modalCta = document.getElementById('modalCta');
+        const whatsappBase = 'https://wa.me/5565999597133?text=';
+
+        function openModal(card) {
+            const title = card.querySelector('h3').textContent.trim();
+            const brand = card.querySelector('.brand').textContent.trim();
+            const imgEl = card.querySelector('.product-img');
+            const imgSrc = imgEl ? imgEl.src : '';
+
+            // Look up product data — try exact match, then try with brand suffix
+            let data = productData[title];
+            if (!data) {
+                // Try matching with brand for duplicates like "Creatina 100% Pura 100g" from Grow Up
+                data = productData[title + '|' + brand];
+            }
+            if (!data) {
+                // Fallback generic description
+                data = {
+                    category: "Suplemento",
+                    description: `${title} da ${brand}. Entre em contato pelo WhatsApp para mais informações sobre este produto, disponibilidade e valores especiais.`,
+                    benefits: ["Qualidade", "Entrega Rápida"]
+                };
+            }
+
+            // Populate modal
+            modalBrand.textContent = brand;
+            modalTitle.textContent = title;
+            modalCategory.textContent = data.category;
+            modalDesc.textContent = data.description;
+
+            if (imgSrc) {
+                modalImg.src = imgSrc;
+                modalImg.alt = title;
+                modalImg.parentElement.style.display = 'flex';
+            } else {
+                modalImg.parentElement.style.display = 'none';
+            }
+
+            // Benefits tags
+            modalBenefits.innerHTML = data.benefits
+                .map(b => `<span class="modal-benefit-tag">${b}</span>`)
+                .join('');
+
+            // WhatsApp CTA
+            const msg = encodeURIComponent(`Olá! Gostaria de saber o preço e disponibilidade do produto: ${title} (${brand})`);
+            modalCta.href = whatsappBase + msg;
+
+            // Show modal
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Event delegation — click on any product card
+        document.querySelectorAll('.product-card').forEach(card => {
+            card.style.cursor = 'pointer';
+            card.addEventListener('click', (e) => {
+                // Don't open modal if clicking the price tag link or other links
+                if (e.target.closest('a')) return;
+                openModal(card);
+            });
+        });
+
+        // Close modal events
+        modalClose.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
+
+        // ============ IntersectionObserver — animations ============
+        const cardObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    cardObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.product-card').forEach(card => {
+            cardObserver.observe(card);
+        });
+
+        // ============ Active nav dot on scroll ============
+        const sections = document.querySelectorAll('.catalog-page');
+        const navDots = document.querySelectorAll('.nav-dot');
+
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navDots.forEach(dot => dot.classList.remove('active'));
+                    const activeDot = document.querySelector(`.nav-dot[href="#${entry.target.id}"]`);
+                    if (activeDot) activeDot.classList.add('active');
+                }
+            });
+        }, { threshold: 0.3 });
+
+        sections.forEach(section => {
+            sectionObserver.observe(section);
+        });
+    </script>
 
 </body>
 

@@ -1,6 +1,6 @@
 {
-  "dependencies": {
-    "cheerio": "^1.2.0",
-    "g-i-s": "^2.1.7"
-  }
+  "name": "gorila-fitness-catalogo",
+  "version": "1.0.0",
+  "description": "Catálogo de vendas premium - Gorila Fitness",
+  "private": true
 }
