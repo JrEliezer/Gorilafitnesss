@@ -766,8 +766,8 @@ section:nth-child(even) .btn-secondary:hover {
         font-size: 2rem;
     }
     .product-grid {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 1.5rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
     }
     .section-nav {
         right: 1rem;
@@ -785,8 +785,22 @@ section:nth-child(even) .btn-secondary:hover {
         font-size: 2rem;
     }
     .product-grid {
-        grid-template-columns: 1fr;
-        padding: 0 1rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.6rem;
+        padding: 0 0.8rem;
+    }
+    .product-card {
+        padding: 0.8rem;
+    }
+    .product-card h3 {
+        font-size: 0.8rem;
+    }
+    .product-card .brand {
+        font-size: 0.65rem;
+    }
+    .price-tag {
+        font-size: 0.6rem;
+        padding: 0.2rem 0.5rem;
     }
     .page-header h2 {
         font-size: 1.5rem;
