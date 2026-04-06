@@ -40,16 +40,25 @@
         <a href="#section-pastas" class="nav-dot" aria-label="Pastas" data-tooltip="Pastas"></a>
     </nav>
 
-    <!-- Header Section -->
-    <header class="catalog-header">
-        <div class="container">
-            <div class="branding">
-                <img src="assets/logo.png" alt="Gorila Fitness Logo" class="logo">
-                <h1>GORILA FITNESS</h1>
-            </div>
-            <p class="tagline">SUPLEMENTOS DE ALTA PERFORMANCE / CATÁLOGO DE ELITE</p>
+    <!-- HERO CHOICE SECTION -->
+    <section class="hero-choice">
+        <div class="branding">
+            <img src="assets/logo.png" alt="Gorila Fitness Logo" class="logo">
+            <h1 style="color: #fff; font-family: var(--font-heading); font-size: 3.5rem; letter-spacing: 4px;">GORILA FITNESS</h1>
         </div>
-    </header>
+        <div class="choice-container">
+            <a href="#section-pretreinos" class="choice-card supplements">
+                <i data-lucide="zap"></i>
+                <h2>SUPLEMENTOS</h2>
+                <p>Alta Performance / Resultados</p>
+            </a>
+            <a href="vestuario.html" class="choice-card clothing" target="_blank">
+                <i data-lucide="shirt"></i>
+                <h2>VESTUÁRIO</h2>
+                <p>Lifestyle / Estilo / Em Breve</p>
+            </a>
+        </div>
+    </section>
 
     <main class="catalog-container">
 
@@ -458,7 +467,29 @@
 
         // ============ Product Descriptions Database ============
         const productData = {
-            // === SEÇÃO 1: PRÉ-TREINOS E TERMOGÊNICOS ===
+            // === SEÇÃO 1: VESTUÁRIO ===
+            "Camiseta Oversized Gorila": {
+                category: "Vestuário",
+                description: "Nossa Camiseta Oversized Gorila é produzida com algodão premium de alta gramatura, proporcionando o caimento perfeito para o estilo streetwear e máximo conforto para o seu dia a dia e treinos. Estampa exclusiva Gorila nas costas.",
+                benefits: ["Algodão Premium", "Corte Oversized", "Conforto Extremo", "Durabilidade"]
+            },
+            "Regata Cavada Elite": {
+                category: "Vestuário",
+                description: "A Regata Cavada Elite foi desenvolvida para destacar o shape e oferecer total liberdade de movimento. Tecido tecnológico que absorve o suor e garante ventilação máxima durante os treinos mais intensos.",
+                benefits: ["Liberdade de Movimento", "Dry Fit", "Corte Cavado", "Respirável"]
+            },
+            "Shorts Treino Pro": {
+                category: "Vestuário",
+                description: "O Shorts Treino Pro combina elasticidade e resistência. Com bolsos estratégicos e cós anatômico, é a peça ideal para agachamentos, corridas e treinos de perna pesados. Estilo funcional e moderno.",
+                benefits: ["Elasticidade", "Bolso Funcional", "Cós Anatômico", "Secagem Rápida"]
+            },
+            "Moletom Heavy Weight": {
+                category: "Vestuário",
+                description: "Para os dias frios e treinos pesados, o Moletom Heavy Weight oferece proteção e estilo. Interior flanelado e capuz ajustável, com modelagem robusta que impõe presença dentro e fora da academia.",
+                benefits: ["Proteção Térmica", "Interior Flanelado", "Modelagem Robusta", "Capuz Ajustável"]
+            },
+
+            // === SEÇÃO 2: PRÉ-TREINOS E TERMOGÊNICOS ===
             "Ares (Maçã Verde) 300g": {
                 category: "Pré-Treino",
                 description: "O Ares da DCX Nutrition é um pré-treino formulado para maximizar a energia, foco e pump muscular. Sua fórmula exclusiva NÃO contém Beta-Alanina, evitando a sensação de formigamento. Conta com L-Arginina para vasodilatação, Taurina para resistência, L-Tirosina para foco mental e Cafeína para energia explosiva. Rende aproximadamente 30 doses.",

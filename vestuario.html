@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gorila Fitness | Linha Vestuário Premium</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@0.344.0"></script>
+    <style>
+        :root { --accent-current: #00f2ff; }
+        
+        .hero-clothing {
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('assets/logo.png');
+            background-size: 300px;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-bottom: 2px solid var(--accent-teal);
+            margin-bottom: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-clothing::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at center, rgba(0, 242, 255, 0.05), transparent);
+            pointer-events: none;
+        }
+
+        .hero-clothing h1 {
+            font-size: 4.5rem;
+            color: #fff;
+            text-shadow: 0 0 30px rgba(0, 242, 255, 0.5);
+            font-family: var(--font-heading);
+            letter-spacing: 8px;
+            text-transform: uppercase;
+        }
+
+        .back-btn {
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+            z-index: 100;
+            background: rgba(0,0,0,0.5);
+            backdrop-filter: blur(10px);
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            color: #fff;
+            text-decoration: none;
+            font-family: var(--font-heading);
+            border: 1px solid rgba(0, 242, 255, 0.3);
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+
+        .back-btn:hover {
+            background: var(--accent-teal);
+            color: #000;
+            box-shadow: 0 0 20px rgba(0, 242, 255, 0.4);
+            border-color: var(--accent-teal);
+        }
+
+        .clothing-grid {
+            padding: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .clothing-card {
+            background: rgba(24, 24, 24, 0.7);
+            backdrop-filter: blur(12px);
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.05);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .clothing-card:hover {
+            transform: translateY(-12px);
+            border-color: var(--accent-teal);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.8), 0 0 40px rgba(0, 242, 255, 0.1);
+        }
+
+        .clothing-img {
+            height: 380px;
+            background: linear-gradient(135deg, #111, #1a1a1a);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-teal);
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .clothing-img::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at center, rgba(0, 242, 255, 0.03), transparent);
+        }
+
+        .clothing-info {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .clothing-info h2 {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            margin-bottom: 0.8rem;
+            color: #fff;
+            letter-spacing: 1px;
+        }
+
+        .clothing-info p {
+            color: rgba(255,255,255,0.6);
+            margin-bottom: 2rem;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .clothing-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .clothing-price {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            color: var(--accent-teal);
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .clothing-badge {
+            background: var(--accent-teal);
+            color: #000;
+            padding: 0.4rem 1rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            z-index: 5;
+            box-shadow: 0 5px 15px rgba(0, 242, 255, 0.3);
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 768px) {
+            .hero-clothing h1 { font-size: 3rem; letter-spacing: 4px; }
+            .back-btn { top: 1rem; left: 1rem; padding: 0.6rem 1rem; font-size: 0.8rem; }
+            .clothing-grid { grid-template-columns: 1fr; padding: 1.5rem; }
+            .clothing-img { height: 320px; }
+        }
+    </style>
+</head>
+<body class="clothing-page">
+    <div class="watermark" style="background-image: url('assets/logo.png'); opacity: 0.05;"></div>
+    
+    <header class="hero-clothing">
+        <a href="index.html" class="back-btn"><i data-lucide="chevron-left"></i> Voltar</a>
+        <div class="container">
+            <p class="tagline" style="color: var(--accent-teal); margin-bottom: 1rem;">Estilo & Performance</p>
+            <h1>Nova Coleção</h1>
+            <p style="color: #666; letter-spacing: 4px; text-transform: uppercase; font-size: 0.9rem;">Elevando o seu lifestyle fitness</p>
+        </div>
+    </header>
+
+    <main class="clothing-grid">
+        <!-- Camiseta -->
+        <article class="clothing-card">
+            <div class="clothing-badge">Oversized</div>
+            <div class="clothing-img">
+                <i data-lucide="shirt" size="100" stroke-width="1"></i>
+            </div>
+            <div class="clothing-info">
+                <h2>Oversized Master</h2>
+                <p>Algodão premium de alta gramatura com caimento streetwear. Perfeita para o treino e para o dia a dia.</p>
+                <div class="clothing-footer">
+                    <span class="clothing-price">EM BREVE</span>
+                    <a href="https://wa.me/5565999597133?text=Olá!%20Gostaria%20de%20reservar%20a%20Camiseta%20Oversized" class="btn btn-primary" style="background: var(--accent-teal); box-shadow: 0 0 15px rgba(0, 242, 255, 0.4); color: #000;">EU QUERO</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Regata -->
+        <article class="clothing-card">
+            <div class="clothing-badge">Elite</div>
+            <div class="clothing-img">
+                <i data-lucide="shirt" size="100" stroke-width="1"></i>
+            </div>
+            <div class="clothing-info">
+                <h2>Regata Cavada</h2>
+                <p>Corte focado em destacar o shape e oferecer total liberdade de movimento nos treinos intensos.</p>
+                <div class="clothing-footer">
+                    <span class="clothing-price">EM BREVE</span>
+                    <a href="https://wa.me/5565999597133?text=Olá!%20Gostaria%20de%20reservar%20a%20Regata%20Cavada" class="btn btn-primary" style="background: var(--accent-teal); box-shadow: 0 0 15px rgba(0, 242, 255, 0.4); color: #000;">EU QUERO</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Shorts -->
+        <article class="clothing-card">
+            <div class="clothing-badge">Training</div>
+            <div class="clothing-img">
+                <i data-lucide="shopping-bag" size="100" stroke-width="1"></i>
+            </div>
+            <div class="clothing-info">
+                <h2>Shorts Pro-Fit</h2>
+                <p>Tecido flexível com bolsos laterais, ideal para agachamentos e treinos de alta performance.</p>
+                <div class="clothing-footer">
+                    <span class="clothing-price">EM BREVE</span>
+                    <a href="https://wa.me/5565999597133?text=Olá!%20Gostaria%20de%20reservar%20o%20Shorts%20Pro-Fit" class="btn btn-primary" style="background: var(--accent-teal); box-shadow: 0 0 15px rgba(0, 242, 255, 0.4); color: #000;">EU QUERO</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Moletom -->
+        <article class="clothing-card">
+            <div class="clothing-badge">Urban</div>
+            <div class="clothing-img">
+                <i data-lucide="shirt" size="100" stroke-width="1"></i>
+            </div>
+            <div class="clothing-info">
+                <h2>Moletom Heavy</h2>
+                <p>Conforto térmico e estilo robusto para os dias frios. Modelagem larga e extrema durabilidade.</p>
+                <div class="clothing-footer">
+                    <span class="clothing-price">EM BREVE</span>
+                    <a href="https://wa.me/5565999597133?text=Olá!%20Gostaria%20de%20reservar%20o%20Moletom%20Heavy" class="btn btn-primary" style="background: var(--accent-teal); box-shadow: 0 0 15px rgba(0, 242, 255, 0.4); color: #000;">EU QUERO</a>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="site-footer" style="padding: 3rem 0; margin-top: 4rem;">
+        <div class="container">
+            <div class="footer-content" style="text-align: center;">
+                <img src="assets/logo.png" alt="Gorila Logo" style="width: 50px; opacity: 0.5; margin-bottom: 1rem;">
+                <p class="footer-text">© 2026 Gorila Fitness. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
