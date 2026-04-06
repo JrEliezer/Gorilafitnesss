@@ -163,6 +163,90 @@ body {
     z-index: 1;
 }
 
+/* Catalog Header (Desktop only) */
+.catalog-header {
+    padding: 4rem 0 2rem;
+    text-align: center;
+    position: relative;
+    background: linear-gradient(to bottom, rgba(10, 10, 10, 0.9), transparent);
+    z-index: 10;
+}
+
+.catalog-header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.catalog-header .header-branding {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.catalog-header .header-logo {
+    width: 60px;
+    height: auto;
+    filter: drop-shadow(0 0 15px rgba(57, 255, 20, 0.2));
+}
+
+.catalog-header h1 {
+    font-family: var(--font-heading);
+    font-size: 2.8rem;
+    letter-spacing: 6px;
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.catalog-header .tagline {
+    font-size: 0.9rem;
+    color: var(--accent-yellow);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-family: var(--font-heading);
+    margin-bottom: 2rem;
+}
+
+.header-cta-vestuario {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.7rem 1.8rem;
+    background: rgba(0, 242, 255, 0.05);
+    color: var(--accent-teal);
+    border: 1px solid rgba(0, 242, 255, 0.3);
+    border-radius: 4px;
+    text-decoration: none;
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: all 0.3s var(--ease-bounce);
+    text-transform: uppercase;
+}
+
+.header-cta-vestuario:hover {
+    background: var(--accent-teal);
+    color: #000;
+    box-shadow: 0 0 25px rgba(0, 242, 255, 0.4);
+    transform: translateY(-2px);
+    border-color: var(--accent-teal);
+}
+
+/* Visibility Rules */
+@media (min-width: 901px) {
+    .hero-choice { display: none !important; }
+    .catalog-header { display: flex !important; }
+}
+
+@media (max-width: 900px) {
+    .hero-choice { display: flex !important; }
+    .catalog-header { display: none !important; }
+}
+
 /* Hero Choice Section */
 .hero-choice {
     min-height: 100vh;
@@ -907,33 +991,6 @@ section:nth-child(even) .btn-secondary:hover {
         font-size: 1.1rem;
         top: 0.4rem;
         right: 0.4rem;
-    }
-}
-    .product-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0.6rem;
-        padding: 0 0.8rem;
-    }
-    .product-card {
-        padding: 0.8rem;
-    }
-    .product-card h3 {
-        font-size: 0.8rem;
-    }
-    .product-card .brand {
-        font-size: 0.65rem;
-    }
-    .price-tag {
-        font-size: 0.6rem;
-        padding: 0.2rem 0.5rem;
-    }
-    .page-header h2 {
-        font-size: 1.5rem;
-        letter-spacing: 2px;
-    }
-    .btn {
-        padding: 0.7rem 1.5rem;
-        font-size: 0.8rem;
     }
 }
 

@@ -89,8 +89,8 @@
     max-width: 1400px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 2.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
 }
 
 .clothing-card {
@@ -205,8 +205,14 @@
     .hero-clothing h1 { font-size: 3rem; letter-spacing: 4px; }
     .hero-clothing .tagline { font-size: 0.9rem; }
     .back-btn { top: 1rem; left: 1rem; padding: 0.6rem 1rem; font-size: 0.8rem; }
-    .clothing-grid { grid-template-columns: 1fr; padding: 1.5rem; }
-    .clothing-img { height: 320px; }
+    .clothing-grid { grid-template-columns: repeat(2, 1fr); gap: 0.8rem; padding: 1.5rem; }
+    .clothing-img { height: 200px; }
+    .clothing-info { padding: 1rem; }
+    .clothing-info h2 { font-size: 1rem; }
+    .clothing-info p { font-size: 0.75rem; margin-bottom: 1rem; }
+    .clothing-price { font-size: 1rem; }
+    .clothing-badge { font-size: 0.6rem; padding: 0.3rem 0.6rem; top: 0.8rem; right: 0.8rem; }
+    .btn-disabled { font-size: 0.65rem; padding: 0.4rem 0.8rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
