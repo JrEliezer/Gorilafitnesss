@@ -2,5 +2,24 @@
   "name": "gorila-fitness-catalogo",
   "version": "1.0.0",
   "description": "Catálogo de vendas premium - Gorila Fitness",
-  "private": true
+  "private": true,
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/user/gorila-fitness.git"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "fitness",
+    "suplementos",
+    "catalogo",
+    "gorila-fitness"
+  ],
+  "scripts": {
+    "serve": "npx serve .",
+    "lint": "npx eslint js/script.js",
+    "format": "npx prettier --write \"**/*.{html,css,js,json}\""
+  }
 }

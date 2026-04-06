@@ -1,0 +1,39 @@
+{
+  "name": "Gorila Fitness",
+  "short_name": "Gorila Fit",
+  "description": "Catálogo premium de suplementos e vestuário fitness",
+  "start_url": "/index.html?utm_source=pwa",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "assets/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["health", "fitness", "shopping"],
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "shortcuts": [
+    {
+      "name": "Suplementos",
+      "url": "/index.html#section-pretreinos",
+      "description": "Ver catálogo de suplementos"
+    },
+    {
+      "name": "Vestuário",
+      "url": "/vestuario.html",
+      "description": "Ver linha de vestuário"
+    }
+  ]
+}
