@@ -50,6 +50,7 @@
 
   // Focusable elements for trap
   const FOCUSABLE_SELECTOR = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
+  let lastFocusedElement = null;
 
   function trapFocus(e) {
     if (e.key !== 'Tab') return;
@@ -71,6 +72,7 @@
   }
 
   function openModal(card) {
+    lastFocusedElement = document.activeElement;
     const title = card.querySelector('h3')?.textContent.trim() || '';
     const brand = card.querySelector('.brand')?.textContent.trim() || '';
     const imgEl = card.querySelector('.product-img');
@@ -93,7 +95,7 @@
 
     if (imgSrc) {
       modalImg.src = imgSrc;
-      modalImg.alt = title;
+      modalImg.alt = title || 'Imagem do produto';
       modalImg.parentElement.style.display = 'flex';
     } else {
       modalImg.parentElement.style.display = 'none';
@@ -120,6 +122,10 @@
     modal.setAttribute('aria-hidden', 'true');
     document.body.style.overflow = '';
     document.removeEventListener('keydown', trapFocus);
+    if (lastFocusedElement) {
+      lastFocusedElement.focus();
+      lastFocusedElement = null;
+    }
   }
 
   // Event delegation on catalog container

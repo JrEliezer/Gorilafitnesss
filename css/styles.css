@@ -287,8 +287,9 @@ body {
 }
 
 .choice-card {
-    background: rgba(24, 24, 24, 0.8);
+    background: rgba(24, 24, 24, 0.92);
     backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border: 2px solid rgba(255,255,255,0.1);
     border-radius: 16px;
     padding: 3rem 2rem;
@@ -420,8 +421,9 @@ body {
 
 /* Product Card */
 .product-card {
-    background: rgba(24, 24, 24, 0.7);
+    background: rgba(24, 24, 24, 0.85);
     backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border-radius: 12px;
     overflow: hidden;
     border: 1px solid rgba(255,255,255,0.05);
@@ -652,6 +654,7 @@ section:nth-child(even) .btn-secondary:hover {
     inset: 0;
     background: rgba(0,0,0,0.85);
     backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     z-index: 1000;
     display: flex;
     align-items: center;
