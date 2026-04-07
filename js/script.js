@@ -13,7 +13,7 @@
     productsJsonUrl: 'data/products.json',
     animationThreshold: 0.05,
     imageFallback: 'assets/logo.png',
-    defaultRating: 4.5,
+    defaultRating: 5,
     defaultReviews: 12,
   };
 
