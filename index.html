@@ -9,16 +9,14 @@
     <!-- Google Search Console verification - add code when registered -->
     <meta name="google-site-verification" content="">
     <title>Gorila Fitness | Catálogo de Vendas Premium</title>
-    <meta name="description"
-        content="Catálogo premium de suplementos Gorila Fitness. Pré-treinos, proteínas, creatinas e pastas de amendoim gourmet. Peça pelo WhatsApp!">
+    <meta name="description" content="Catálogo premium de suplementos Gorila Fitness. Pré-treinos, proteínas, creatinas e pastas de amendoim gourmet. Peça pelo WhatsApp!">
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://gorilafitness.com/">
 
     <!-- Open Graph / WhatsApp Preview -->
     <meta property="og:title" content="Gorila Fitness | Catálogo de Vendas Premium">
-    <meta property="og:description"
-        content="Suplementos de alta performance para treinos de elite. Confira nosso catálogo!">
+    <meta property="og:description" content="Suplementos de alta performance para treinos de elite. Confira nosso catálogo!">
     <meta property="og:image" content="https://gorilafitness.com/assets/logo.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -36,16 +34,10 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/logo.png">
 
-    <!-- Preconnect + Preload critical CSS and fonts -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="css/styles.css" as="style">
-    <link rel="preload" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/rajdhani/v22/LDI2apCSOBg7S-Q2jAEVf0cE8QXkEwQzMO7wRRVgMf0.woff2" crossorigin>
-    <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hjp-Ek-_EeA.woff2" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://unpkg.com/lucide@0.344.0" defer></script>
 
@@ -75,11 +67,9 @@
     }
     </script>
 
-    <!-- Noscript fallback -->
     <noscript>
         <style>
             .product-card { opacity: 1 !important; transform: none !important; }
-            .js .product-card { opacity: 0; }
         </style>
     </noscript>
 </head>
@@ -89,426 +79,136 @@
     <!-- Skip to content link -->
     <a href="#main-content" class="skip-link">Pular para o conteúdo</a>
 
-    <!-- Global Watermark -->
-    <div class="watermark"></div>
-
-    <!-- Section Navigation -->
-    <nav class="section-nav" aria-label="Navegação do catálogo">
-        <a href="#section-pretreinos" class="nav-dot active" aria-label="Pré-Treinos" data-tooltip="Pré-Treinos"></a>
-        <a href="#section-proteinas" class="nav-dot" aria-label="Proteínas" data-tooltip="Proteínas"></a>
-        <a href="#section-saude" class="nav-dot" aria-label="Saúde" data-tooltip="Saúde"></a>
-        <a href="#section-pastas" class="nav-dot" aria-label="Pastas" data-tooltip="Pastas"></a>
-    </nav>
-
-    <!-- Header Section (Desktop only) -->
-    <header class="catalog-header">
-        <div class="container">
-            <div class="header-branding">
-                <img src="assets/logo.png" alt="Gorila Fitness Logo" class="header-logo" width="60" height="60">
-                <h1>GORILA FITNESS</h1>
-            </div>
-            <p class="tagline">SUPLEMENTOS DE ALTA PERFORMANCE / CATÁLOGO DE ELITE</p>
-            <a href="vestuario.html" class="header-cta-vestuario">
-                <i data-lucide="shirt"></i>
-                Ver Vestuário
+    <!-- ==================== TOP NAVBAR ==================== -->
+    <header class="top-navbar" id="topNavbar">
+        <div class="navbar-inner">
+            <a href="#" class="navbar-brand">
+                <img src="assets/logo.png" alt="Gorila Fitness" class="navbar-logo" width="36" height="36">
+                <span>GORILA FITNESS</span>
             </a>
+            <nav class="navbar-categories" aria-label="Categorias">
+                <button class="nav-cat active" data-category="all" aria-label="Todos">
+                    <i data-lucide="grid" aria-hidden="true"></i>
+                    <span>Todos</span>
+                </button>
+                <button class="nav-cat" data-category="Pré-Treino" aria-label="Pré-Treinos">
+                    <i data-lucide="zap" aria-hidden="true"></i>
+                    <span>Pré-Treinos</span>
+                </button>
+                <button class="nav-cat" data-category="Whey Protein" data-alt-categories="Hipercalórico,Creatina,Aminoácido" aria-label="Proteínas">
+                    <i data-lucide="dumbbell" aria-hidden="true"></i>
+                    <span>Proteínas</span>
+                </button>
+                <button class="nav-cat" data-category="Multivitamínico" data-alt-categories="Hormonal,Performance,Articulações,Imunidade,Vitamina" aria-label="Saúde">
+                    <i data-lucide="heart" aria-hidden="true"></i>
+                    <span>Saúde</span>
+                </button>
+                <button class="nav-cat" data-category="Pasta de Amendoim" aria-label="Pastas">
+                    <i data-lucide="cookie" aria-hidden="true"></i>
+                    <span>Pastas</span>
+                </button>
+            </nav>
         </div>
     </header>
 
-    <!-- HERO CHOICE SECTION -->
-    <section class="hero-choice">
-        <div class="branding">
-            <img src="assets/logo.png" alt="Gorila Fitness Logo" class="logo" width="80" height="80">
-            <h1 class="hero-title">GORILA FITNESS</h1>
-        </div>
-        <div class="choice-container">
-            <a href="#section-pretreinos" class="choice-card supplements">
-                <i data-lucide="zap" aria-hidden="true"></i>
-                <h2>SUPLEMENTOS</h2>
-                <p>Alta Performance / Resultados</p>
-            </a>
-            <a href="vestuario.html" class="choice-card clothing" target="_blank" rel="noopener noreferrer">
-                <i data-lucide="shirt" aria-hidden="true"></i>
-                <h2>VESTUÁRIO</h2>
-                <p>Lifestyle / Estilo / Em Breve</p>
-            </a>
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="hero">
+        <div class="watermark"></div>
+        <div class="hero-content">
+            <p class="hero-overline">Catálogo Oficial</p>
+            <h1 class="hero-title">Os melhores suplementos com o <span class="text-accent">menor preço de Goiás</span></h1>
+            <p class="hero-subtitle">Entrega rápida · Estoque disponível · Atendimento personalizado via WhatsApp</p>
+            <div class="hero-badges">
+                <span class="trust-badge"><i data-lucide="truck" aria-hidden="true"></i> Entrega Rápida</span>
+                <span class="trust-badge"><i data-lucide="check-circle" aria-hidden="true"></i> Estoque Disponível</span>
+                <span class="trust-badge"><i data-lucide="shield-check" aria-hidden="true"></i> Produtos Originais</span>
+            </div>
+            <div class="hero-actions">
+                <a href="#products" class="btn btn-primary">Ver Catálogo</a>
+                <a href="https://wa.me/5565999597133?text=Olá!%20Gostaria%20de%20ver%20o%20catálogo%20completo" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+                    <i data-lucide="message-circle" aria-hidden="true"></i> Falar no WhatsApp
+                </a>
+            </div>
         </div>
     </section>
 
-    <main class="catalog-container" id="main-content">
-
-        <!-- SECTION 1: PRÉ-TREINOS -->
-        <section class="catalog-page" id="section-pretreinos" aria-labelledby="pretreinos-heading">
-            <div class="page-header">
-                <h2 id="pretreinos-heading">COMBUSTÍVEL PARA SEU TREINO</h2>
-                <div class="glow-line green"></div>
-                <p>PRÉ-TREINOS E TERMOGÊNICOS</p>
+    <!-- ==================== SEARCH & FILTER BAR ==================== -->
+    <section class="search-section" id="searchSection">
+        <div class="search-bar">
+            <div class="search-input-wrapper">
+                <i data-lucide="search" class="search-icon" aria-hidden="true"></i>
+                <input type="search" id="searchInput" class="search-input" placeholder="Buscar produto..." aria-label="Buscar produto por nome">
+                <button class="search-clear" id="searchClear" aria-label="Limpar busca" style="display:none;">
+                    <i data-lucide="x" aria-hidden="true"></i>
+                </button>
             </div>
-
-            <div class="product-grid">
-                <article class="product-card">
-                    <div class="img-wrapper"><img src="assets/img-ares.png" alt="Ares (Maçã Verde) 300g"
-                            class="product-img" loading="lazy" decoding="async" width="300" height="300"></div>
-                    <h3>Ares (Maçã Verde) 300g</h3>
-                    <p class="brand">DCX Nutrition</p>
-                    <span class="price-tag">Consulte o preço</span>
-                </article>
-                <article class="product-card">
-                    <div class="img-wrapper"><img src="assets/bludemon.png" alt="Blue Demon" class="product-img"
-                            loading="lazy" decoding="async" width="300" height="300"></div>
-                    <h3>Blue Demon</h3>
-                    <p class="brand">DCX Nutrition</p>
-                    <span class="price-tag">Consulte o preço</span>
-                </article>
-                <article class="product-card">
-                    <div class="img-wrapper"><img src="assets/bagda.png" alt="BAGDA (Frutas Amarelas) 420g"
-                            class="product-img" loading="lazy" decoding="async" width="300" height="300"></div>
-                    <h3>BAGDA (Frutas Amarelas) 420g</h3>
-                    <p class="brand">DCX Nutrition</p>
-                    <span class="price-tag">Consulte o preço</span>
-                </article>
-                <article class="product-card">
-                    <div class="img-wrapper"><img src="assets/nigthup.png" alt="Night Up (Maçã Verde) 200g"
-                            class="product-img" loading="lazy" decoding="async" width="300" height="300"></div>
-                    <h3>Night Up (Maçã Verde) 200g</h3>
-                    <p class="brand">DCX Nutrition</p>
-                    <span class="price-tag">Consulte o preço</span>
-                </article>
-                <article class="product-card">
-                    <div class="img-wrapper"><img src="assets/bope.png" alt="Pré-treino BOPE (Frutas Amarelas) 150g"
-                            class="product-img" loading="lazy" decoding="async" width="300" height="300"></div>
-                    <h3>Pré-treino BOPE (Frutas Amarelas) 150g</h3>
-                    <p class="brand">Black Skull</p>
-                    <span class="price-tag">Consulte o preço</span>
-                </article>
-                <article class="product-card">
-                    <div class="img-wrapper"><img src="assets/bope.png" alt="Pré-treino BOPE (Limão) 300g" class="product-img"
-                            loading="lazy" decoding="async" width="300" height="300"></div>
-                    <h3>Pré-treino BOPE (Limão) 300g</h3>
-                    <p class="brand">Black Skull</p>
-                    <span class="price-tag">Consulte o preço</span>
-                </article>
-                <article class="product-card">
-                    <div class="img-wrapper"><img src="assets/Dimethylex.png" alt="D-Methylex" class="product-img"
-                            loading="lazy" decoding="async" width="300" height="300"></div>
-                    <h3>D-Methylex</h3>
-                    <p class="brand">Under Labz</p>
-                    <span class="price-tag">Consulte o preço</span>
-                </article>
-                <article class="product-card">
-                    <div class="img-wrapper"><img src="assets/kratosblack.png" alt="Kratos Black" class="product-img"
-                            loading="lazy" decoding="async" width="300" height="300"></div>
-                    <h3>Kratos Black</h3>
-                    <p class="brand">DCX Nutrition</p>
-                    <span class="price-tag">Consulte o preço</span>
-                </article>
-                <article class="product-card">
-                    <div class="img-wrapper"><img src="assets/ThermoExtreme.png" alt="Thermo Extreme"
-                            class="product-img" loading="lazy" decoding="async" width="300" height="300"></div>
-                    <h3>Thermo Extreme</h3>
-                    <p class="brand">DCX Nutrition</p>
-                    <span class="price-tag">Consulte o preço</span>
-                </article>
-                <article class="product-card">
-                    <div class="img-wrapper"><img src="assets/Thermo-Xcafeína.png" alt="Thermo-X com cafeína (Frutas Amarelas)"
-                            class="product-img" loading="lazy" decoding="async" width="300" height="300"></div>
-                    <h3>Thermo-X c/ cafeína (Frutas Amarelas)</h3>
-                    <p class="brand">DCX Nutrition</p>
-                    <span class="price-tag">Consulte o preço</span>
-                </article>
-                <article class="product-card">
-                    <div class="img-wrapper"><img src="assets/Diuretic.png" alt="Diuretic (Frutas Amarelas) 225g"
-                            class="product-img" loading="lazy" decoding="async" width="300" height="300"></div>
-                    <h3>Diuretic (Frutas Amarelas) 225g</h3>
-                    <p class="brand">DCX Nutrition</p>
-                    <span class="price-tag">Consulte o preço</span>
-                </article>
+            <div class="brand-filter-wrapper">
+                <button class="brand-dropdown-toggle" id="brandToggle" aria-expanded="false" aria-controls="brandDropdown">
+                    <i data-lucide="filter" class="icon-sm" aria-hidden="true"></i>
+                    <span id="brandLabel">Todas as Marcas</span>
+                    <i data-lucide="chevron-down" class="icon-sm" aria-hidden="true"></i>
+                </button>
+                <div class="brand-dropdown" id="brandDropdown" role="listbox" aria-label="Filtrar por marca" hidden>
+                    <div class="brand-option active" role="option" data-brand="all" aria-selected="true">Todas as Marcas</div>
+                </div>
             </div>
+        </div>
+        <div class="search-stats" id="searchStats"></div>
+    </section>
 
-            <div class="page-footer">
-                <a href="https://wa.me/5565999597133?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20pelo%20catálogo"
-                    class="btn btn-primary" target="_blank" rel="noopener noreferrer">COMPRE AGORA</a>
-                <a href="https://wa.me/5565999597133?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20pré-treinos"
-                    class="btn btn-secondary" target="_blank" rel="noopener noreferrer">SAIBA MAIS</a>
-                <span class="page-number">01 / 04</span>
+    <!-- ==================== PRODUCT GRID ==================== -->
+    <main id="main-content">
+        <section id="products" class="product-section">
+            <div class="product-grid" id="productGrid">
+                <!-- Products rendered by JS -->
+            </div>
+            <div class="empty-state" id="emptyState" style="display:none;">
+                <i data-lucide="search-x" size="48" aria-hidden="true"></i>
+                <h3>Nenhum produto encontrado</h3>
+                <p>Tente ajustar sua busca ou filtros.</p>
+                <button class="btn btn-secondary btn-sm" id="clearFilters">Limpar Filtros</button>
             </div>
         </section>
 
-        <!-- SECTION 2: PROTEÍNAS -->
-        <section class="catalog-page" id="section-proteinas" aria-labelledby="proteinas-heading">
-            <div class="page-header">
-                <h2 id="proteinas-heading">A CONSTRUÇÃO</h2>
-                <div class="glow-line purple"></div>
-                <p>PROTEÍNAS E CREATINAS</p>
-            </div>
-
-            <div class="product-grid">
-                <article class="product-card">
-                    <div class="img-wrapper"><img src="assets/WheyGourmet.png" alt="Whey 100% Gourmet (Choco Branco) 900g"
-                            class="product-img" loading="lazy" decoding="async" width="300" height="300"></div>
-                    <h3>Whey 100% Gourmet (Choco Branco) 900g</h3>
-                    <p class="brand">DCX Nutrition</p>
-                    <span class="price-tag">Consulte o preço</span>
-                </article>
-                <article class="product-card">
-                    <div class="img-wrapper"><img src="assets/wheyhigh.png" alt="Whey High (Morango) 900g"
-                            class="product-img" loading="lazy" decoding="async" width="300" height="300"></div>
-                    <h3>Whey High (Morango) 900g</h3>
-                    <p class="brand">Absolut</p>
-                    <span class="price-tag">Consulte o preço</span>
-                </article>
-                <article class="product-card">
-                    <div class="img-wrapper"><img src="assets/wheyhigh.png" alt="Whey High (Baunilha) 900g"
-                            class="product-img" loading="lazy" decoding="async" width="300" height="300"></div>
-                    <h3>Whey High (Baunilha) 900g</h3>
-                    <p class="brand">Absolut</p>
-                    <span class="price-tag">Consulte o preço</span>
-                </article>
-                <article class="product-card">
-                    <div class="img-wrapper"><img src="assets/wheynutrata.png" alt="Whey 100% Nutrata 900g"
-                            class="product-img" loading="lazy" decoding="async" width="300" height="300"></div>
-                    <h3>Whey 100% 900g</h3>
-                    <p class="brand">Nutrata</p>
-                    <span class="price-tag">Consulte o preço</span>
-                </article>
-                <article class="product-card">
-                    <div class="img-wrapper"><img src="assets/wheyblackskull.png" alt="Whey Black Skull 900g"
-                            class="product-img" loading="lazy" decoding="async" width="300" height="300"></div>
-                    <h3>Whey Black Skull 900g</h3>
-                    <p class="brand">Black Skull</p>
-                    <span class="price-tag">Consulte o preço</span>
-                </article>
-                <article class="product-card">
-                    <div class="img-wrapper"><img src="assets/wheycrush.png" alt="Protein Crush (Chocobear) 900g"
-                            class="product-img" loading="lazy" decoding="async" width="300" height="300"></div>
-                    <h3>Protein Crush (Chocobear) 900g</h3>
-                    <p class="brand">Under Labz</p>
-                    <span class="price-tag">Consulte o preço</span>
-                </article>
-                <article class="product-card">
-                    <div class="img-wrapper"><img src="assets/wheycrush.png" alt="Protein Crush (Dulce de Leche) 900g"
-                            class="product-img" loading="lazy" decoding="async" width="300" height="300"></div>
-                    <h3>Protein Crush (Dulce de Leche) 900g</h3>
-                    <p class="brand">Under Labz</p>
-                    <span class="price-tag">Consulte o preço</span>
-                </article>
-                <article class="product-card">
-                    <div class="img-wrapper"><img src="assets/wheycrush.png" alt="Protein Crush (Strawbear Swiss) 900g"
-                            class="product-img" loading="lazy" decoding="async" width="300" height="300"></div>
-                    <h3>Protein Crush (Strawbear Swiss) 900g</h3>
-                    <p class="brand">Under Labz</p>
-                    <span class="price-tag">Consulte o preço</span>
-                </article>
-                <article class="product-card">
-                    <div class="img-wrapper"><img src="assets/wheygrowup.png" alt="Mass Up (Baunilha) 3kg"
-                            class="product-img" loading="lazy" decoding="async" width="300" height="300"></div>
-                    <h3>Mass Up (Baunilha) 3kg</h3>
-                    <p class="brand">Grow Up</p>
-                    <span class="price-tag">Consulte o preço</span>
-                </article>
-                <article class="product-card">
-                    <div class="img-wrapper"><img src="assets/wheygrowup.png" alt="Mass Up (Morango) 3kg"
-                            class="product-img" loading="lazy" decoding="async" width="300" height="300"></div>
-                    <h3>Mass Up (Morango) 3kg</h3>
-                    <p class="brand">Grow Up</p>
-                    <span class="price-tag">Consulte o preço</span>
-                </article>
-                <article class="product-card">
-                    <div class="img-wrapper"><img src="assets/creatina100g.png" alt="Creatina 100% Pura 100g DCX"
-                            class="product-img" loading="lazy" decoding="async" width="300" height="300"></div>
-                    <h3>Creatina 100% Pura 100g (DCX)</h3>
-                    <p class="brand">DCX Nutrition</p>
-                    <span class="price-tag">Consulte o preço</span>
-                </article>
-                <article class="product-card">
-                    <div class="img-wrapper"><img src="assets/creatinadcx.png" alt="Creatina 100% Pura 300g"
-                            class="product-img" loading="lazy" decoding="async" width="300" height="300"></div>
-                    <h3>Creatina 100% Pura 300g</h3>
-                    <p class="brand">DCX Nutrition</p>
-                    <span class="price-tag">Consulte o preço</span>
-                </article>
-                <article class="product-card">
-                    <div class="img-wrapper"><img src="assets/refil.png" alt="Creatina Refil 500g" class="product-img"
-                            loading="lazy" decoding="async" width="300" height="300"></div>
-                    <h3>Creatina Refil 500g</h3>
-                    <p class="brand">DCX Nutrition</p>
-                    <span class="price-tag">Consulte o preço</span>
-                </article>
-                <article class="product-card">
-                    <div class="img-wrapper"><img src="assets/creatinaskull.png" alt="Creatine Pure 300g Black Skull"
-                            class="product-img" loading="lazy" decoding="async" width="300" height="300"></div>
-                    <h3>Creatine Pure 300g</h3>
-                    <p class="brand">Black Skull</p>
-                    <span class="price-tag">Consulte o preço</span>
-                </article>
-                <article class="product-card">
-                    <div class="img-wrapper"><img src="assets/betalanina.png" alt="Beta Alanina 100g"
-                            class="product-img" loading="lazy" decoding="async" width="300" height="300"></div>
-                    <h3>Beta Alanina 100g</h3>
-                    <p class="brand">Black Skull</p>
-                    <span class="price-tag">Consulte o preço</span>
-                </article>
-                <article class="product-card">
-                    <div class="img-wrapper"><img src="assets/creatinagrowup.png" alt="Creatina 100% Pura 100g Grow Up"
-                            class="product-img" loading="lazy" decoding="async" width="300" height="300"></div>
-                    <h3>Creatina 100% Pura 100g (Grow Up)</h3>
-                    <p class="brand">Grow Up</p>
-                    <span class="price-tag">Consulte o preço</span>
-                </article>
-            </div>
-
-            <div class="page-footer">
-                <a href="https://wa.me/5565999597133?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20pelo%20catálogo"
-                    class="btn btn-primary" target="_blank" rel="noopener noreferrer">COMPRE AGORA</a>
-                <a href="https://wa.me/5565999597133?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20proteínas%20e%20creatinas"
-                    class="btn btn-secondary" target="_blank" rel="noopener noreferrer">SAIBA MAIS</a>
-                <span class="page-number">02 / 04</span>
-            </div>
-        </section>
-
-        <!-- SECTION 3: SAÚDE -->
-        <section class="catalog-page" id="section-saude" aria-labelledby="saude-heading">
-            <div class="page-header">
-                <h2 id="saude-heading">O OTIMIZADOR</h2>
-                <div class="glow-line green"></div>
-                <p>SAÚDE E PERFORMANCE</p>
-            </div>
-
-            <div class="product-grid">
-                <article class="product-card">
-                    <div class="img-wrapper"><img src="assets/Multix.png" alt="Mult X" class="product-img"
-                            loading="lazy" decoding="async" width="300" height="300"></div>
-                    <h3>Mult X</h3>
-                    <p class="brand">DCX Nutrition</p>
-                    <span class="price-tag">Consulte o preço</span>
-                </article>
-                <article class="product-card">
-                    <div class="img-wrapper"><img src="assets/TestoGh.png" alt="Testi 1000GH" class="product-img"
-                            loading="lazy" decoding="async" width="300" height="300"></div>
-                    <h3>Testi 1000GH</h3>
-                    <p class="brand">DCX Nutrition</p>
-                    <span class="price-tag">Consulte o preço</span>
-                </article>
-                <article class="product-card">
-                    <div class="img-wrapper"><img src="assets/tadala.png" alt="T-DALA X" class="product-img"
-                            loading="lazy" decoding="async" width="300" height="300"></div>
-                    <h3>T-DALA X</h3>
-                    <p class="brand">DCX Nutrition</p>
-                    <span class="price-tag">Consulte o preço</span>
-                </article>
-                <article class="product-card">
-                    <div class="img-wrapper"><img src="assets/colageno.png" alt="Colagen II Condroitina + Glucosamina" class="product-img"
-                            loading="lazy" decoding="async" width="300" height="300"></div>
-                    <h3>Colagen II Condroitina + Glucosamina</h3>
-                    <p class="brand">Bionatus Pharma</p>
-                    <span class="price-tag">Consulte o preço</span>
-                </article>
-                <article class="product-card">
-                    <div class="img-wrapper"><img src="assets/a-z.png" alt="Megapoli A-Z" class="product-img"
-                            loading="lazy" decoding="async" width="300" height="300"></div>
-                    <h3>Megapoli A-Z</h3>
-                    <p class="brand">Bionatus Pharma</p>
-                    <span class="price-tag">Consulte o preço</span>
-                </article>
-                <article class="product-card">
-                    <div class="img-wrapper"><img src="assets/acetilcisteina.png"
-                            alt="Acetilcisteina 600mg + Vit C + D3 + ZINC" class="product-img" loading="lazy"
-                            decoding="async" width="300" height="300"></div>
-                    <h3>Acetilcisteina 600mg + Vit C + D3 + ZINC</h3>
-                    <p class="brand">Katigua</p>
-                    <span class="price-tag">Consulte o preço</span>
-                </article>
-                <article class="product-card">
-                    <div class="img-wrapper"><img src="assets/b12.png" alt="B12 Metilcobalamina" class="product-img"
-                            loading="lazy" decoding="async" width="300" height="300"></div>
-                    <h3>B12 Metilcobalamina</h3>
-                    <p class="brand">Katigua</p>
-                    <span class="price-tag">Consulte o preço</span>
-                </article>
-            </div>
-
-            <div class="page-footer">
-                <a href="https://wa.me/5565999597133?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20pelo%20catálogo"
-                    class="btn btn-primary" target="_blank" rel="noopener noreferrer">COMPRE AGORA</a>
-                <a href="https://wa.me/5565999597133?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20suplementos%20de%20saúde"
-                    class="btn btn-secondary" target="_blank" rel="noopener noreferrer">SAIBA MAIS</a>
-                <span class="page-number">03 / 04</span>
-            </div>
-        </section>
-
-        <!-- SECTION 4: PASTAS -->
-        <section class="catalog-page" id="section-pastas" aria-labelledby="pastas-heading">
-            <div class="page-header">
-                <h2 id="pastas-heading">A RECOMPENSA</h2>
-                <div class="glow-line purple"></div>
-                <p>PASTAS DE AMENDOIM GOURMET</p>
-            </div>
-
-            <div class="product-grid">
-                <article class="product-card">
-                    <div class="img-wrapper"><img src="assets/chocomix.png" alt="Pasta de Amendoim Choco Mix 600g"
-                            class="product-img" loading="lazy" decoding="async" width="300" height="300"></div>
-                    <h3>Pasta de Amendoim Choco Mix 600g</h3>
-                    <p class="brand">DCX Nutrition</p>
-                    <span class="price-tag">Consulte o preço</span>
-                </article>
-                <article class="product-card">
-                    <div class="img-wrapper"><img src="assets/leiteempo.png" alt="Pasta de Amendoim Leite em Pó 600g"
-                            class="product-img" loading="lazy" decoding="async" width="300" height="300"></div>
-                    <h3>Pasta de Amendoim Leite em Pó 600g</h3>
-                    <p class="brand">DCX Nutrition</p>
-                    <span class="price-tag">Consulte o preço</span>
-                </article>
-                <article class="product-card">
-                    <div class="img-wrapper"><img src="assets/Chocokat.png" alt="Pasta de Amendoim Choco Kat 600g"
-                            class="product-img" loading="lazy" decoding="async" width="300" height="300"></div>
-                    <h3>Pasta de Amendoim Choco Kat 600g</h3>
-                    <p class="brand">DCX Nutrition</p>
-                    <span class="price-tag">Consulte o preço</span>
-                </article>
-                <article class="product-card">
-                    <div class="img-wrapper"><img src="assets/chocobueno.png" alt="Pasta de Amendoim Choco Bueno 600g"
-                            class="product-img" loading="lazy" decoding="async" width="300" height="300"></div>
-                    <h3>Pasta de Amendoim Choco Bueno 600g</h3>
-                    <p class="brand">DCX Nutrition</p>
-                    <span class="price-tag">Consulte o preço</span>
-                </article>
-                <article class="product-card">
-                    <div class="img-wrapper"><img src="assets/chochobueno250g.png"
-                            alt="Pasta de Amendoim Choco Bueno 250g" class="product-img" loading="lazy"
-                            decoding="async" width="300" height="300"></div>
-                    <h3>Pasta de Amendoim Choco Bueno 250g</h3>
-                    <p class="brand">DCX Nutrition</p>
-                    <span class="price-tag">Consulte o preço</span>
-                </article>
-            </div>
-
-            <div class="page-footer">
-                <a href="https://wa.me/5565999597133?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20pelo%20catálogo"
-                    class="btn btn-primary" target="_blank" rel="noopener noreferrer">COMPRE AGORA</a>
-                <a href="https://wa.me/5565999597133?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20as%20pastas%20de%20amendoim"
-                    class="btn btn-secondary" target="_blank" rel="noopener noreferrer">SAIBA MAIS</a>
-                <span class="page-number">04 / 04</span>
+        <!-- ==================== SOCIAL PROOF ==================== -->
+        <section class="social-proof">
+            <h2 class="section-heading">O que nossos clientes dizem</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars" role="img" aria-label="5 estrelas">★★★★★</div>
+                    <p class="review-text">"Chegou super rápido e o pré-treino é top demais! Recomendo demais a Gorila Fitness."</p>
+                    <span class="review-author">— Lucas M.</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars" role="img" aria-label="5 estrelas">★★★★★</div>
+                    <p class="review-text">"Melhor atendimento que já tive! Me ajudaram a escolher o whey ideal pro meu objetivo."</p>
+                    <span class="review-author">— Fernanda S.</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars" role="img" aria-label="5 estrelas">★★★★★</div>
+                    <p class="review-text">"Creatina DCX original, preço justo e entrega antes do prazo. Já comprei 3 vezes!"</p>
+                    <span class="review-author">— Rafael T.</span>
+                </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer Semântico -->
+    <!-- ==================== FOOTER ==================== -->
     <footer class="site-footer">
         <div class="container">
             <div class="footer-content">
                 <div class="social-links">
-                    <a href="https://instagram.com/gorila_suplementacao" target="_blank" rel="noopener noreferrer"
-                        aria-label="Siga no Instagram @gorila_suplementacao"><i data-lucide="instagram" aria-hidden="true"></i></a>
+                    <a href="https://instagram.com/gorila_suplementacao" target="_blank" rel="noopener noreferrer" aria-label="Siga no Instagram @gorila_suplementacao">
+                        <i data-lucide="instagram" aria-hidden="true"></i>
+                    </a>
                 </div>
-                <a href="https://wa.me/5565999597133?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20pelo%20catálogo"
-                    class="btn btn-primary" target="_blank" rel="noopener noreferrer">COMPRE AGORA</a>
+                <a href="https://wa.me/5565999597133?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20pelo%20catálogo" class="btn btn-primary" target="_blank" rel="noopener noreferrer">FAZER PEDIDO</a>
                 <p class="footer-text">© 2026 Gorila Fitness. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Product Modal -->
+    <!-- ==================== MODAL ==================== -->
     <div class="product-modal-overlay" id="productModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalDesc" aria-hidden="true">
         <div class="product-modal">
             <button class="modal-close" id="modalClose" aria-label="Fechar modal">&times;</button>
@@ -524,12 +224,10 @@
                     <div class="modal-benefits" id="modalBenefits" role="list" aria-label="Benefícios do produto"></div>
                     <a class="modal-cta" id="modalCta" href="#" target="_blank" rel="noopener noreferrer">
                         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                            <path
-                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
-                            <path
-                                d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.79 23.492a.5.5 0 00.612.612l4.458-1.494A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.25 0-4.336-.65-6.102-1.768l-.426-.26-3.278 1.098 1.098-3.278-.26-.426A9.955 9.955 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z" />
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.79 23.492a.5.5 0 00.612.612l4.458-1.494A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.25 0-4.336-.65-6.102-1.768l-.426-.26-3.278 1.098 1.098-3.278-.26-.426A9.955 9.955 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/>
                         </svg>
-                        COMPRAR AGORA
+                        PEDIR VIA WHATSAPP
                     </a>
                 </div>
             </div>

@@ -1,262 +1,246 @@
 {
   "products": {
-    "Camiseta Oversized Gorila": {
-      "id": "camiseta-oversized",
-      "category": "Vestuário",
-      "description": "Nossa Camiseta Oversized Gorila é produzida com algodão premium de alta gramatura, proporcionando o caimento perfeito para o estilo streetwear e máximo conforto para o seu dia a dia e treinos. Estampa exclusiva Gorila nas costas.",
-      "benefits": ["Algodão Premium", "Corte Oversized", "Conforto Extremo", "Durabilidade"]
-    },
-    "Regata Cavada Elite": {
-      "id": "regata-cavada",
-      "category": "Vestuário",
-      "description": "A Regata Cavada Elite foi desenvolvida para destacar o shape e oferecer total liberdade de movimento. Tecido tecnológico que absorve o suor e garante ventilação máxima durante os treinos mais intensos.",
-      "benefits": ["Liberdade de Movimento", "Dry Fit", "Corte Cavado", "Respirável"]
-    },
-    "Shorts Treino Pro": {
-      "id": "shorts-treino-pro",
-      "category": "Vestuário",
-      "description": "O Shorts Treino Pro combina elasticidade e resistência. Com bolsos estratégicos e cós anatômico, é a peça ideal para agachamentos, corridas e treinos de perna pesados. Estilo funcional e moderno.",
-      "benefits": ["Elasticidade", "Bolso Funcional", "Cós Anatômico", "Secagem Rápida"]
-    },
-    "Moletom Heavy Weight": {
-      "id": "moletom-heavy",
-      "category": "Vestuário",
-      "description": "Para os dias frios e treinos pesados, o Moletom Heavy Weight oferece proteção e estilo. Interior flanelado e capuz ajustável, com modelagem robusta que impõe presença dentro e fora da academia.",
-      "benefits": ["Proteção Térmica", "Interior Flanelado", "Modelagem Robusta", "Capuz Ajustável"]
-    },
     "Ares (Maçã Verde) 300g": {
-      "id": "ares-maca-verde",
       "category": "Pré-Treino",
       "description": "O Ares da DCX Nutrition é um pré-treino formulado para maximizar a energia, foco e pump muscular. Sua fórmula exclusiva NÃO contém Beta-Alanina, evitando a sensação de formigamento. Conta com L-Arginina para vasodilatação, Taurina para resistência, L-Tirosina para foco mental e Cafeína para energia explosiva. Rende aproximadamente 30 doses.",
-      "benefits": ["Energia Explosiva", "Foco Mental", "Pump Muscular", "Sem Beta-Alanina"]
+      "benefits": ["Energia Explosiva", "Foco Mental", "Pump Muscular", "Sem Beta-Alanina"],
+      "brand": "DCX Nutrition"
     },
     "Blue Demon": {
-      "id": "blue-demon",
       "category": "Pré-Treino",
       "description": "O Blue Demon da DCX Nutrition é um pré-treino de alta potência com 400mg de cafeína por dose. Sua fórmula combina Beta-Alanina para resistência muscular, Arginina para vasodilatação e Tirosina para conexão mente-músculo. Ideal para treinos que exigem intensidade máxima e foco absoluto.",
-      "benefits": ["400mg Cafeína", "Resistência", "Vasodilatação", "Foco Intenso"]
+      "benefits": ["400mg Cafeína", "Resistência", "Vasodilatação", "Foco Intenso"],
+      "brand": "DCX Nutrition",
+      "badge": "MAIS VENDIDO"
     },
     "BAGDA (Frutas Amarelas) 420g": {
-      "id": "bagda-frutas-amarelas",
       "category": "Pré-Treino",
       "description": "O Bagdá da DCX Nutrition é um pré-treino completo que proporciona energia explosiva, foco e resistência muscular. Sua fórmula contém Cafeína, Beta-Alanina, L-Arginina, Taurina e vitaminas do complexo B. Rende aproximadamente 60 doses e é livre de glúten e lactose.",
-      "benefits": ["60 Doses", "Energia", "Foco", "Sem Glúten"]
+      "benefits": ["60 Doses", "Energia", "Foco", "Sem Glúten"],
+      "brand": "DCX Nutrition"
     },
     "Night Up (Maçã Verde) 200g": {
-      "id": "night-up-maca-verde",
       "category": "Pré-Treino Noturno",
       "description": "O Night Up da DCX Nutrition é o pré-treino ideal para quem treina à noite. Sua fórmula SEM CAFEÍNA contém 3000mg de Beta-Alanina, 1500mg de Arginina e 1000mg de Taurina, proporcionando vasodilatação e resistência sem prejudicar o sono. Adoçado com Stévia e livre de glúten.",
-      "benefits": ["Sem Cafeína", "Treino Noturno", "Vasodilatação", "Sem Glúten"]
+      "benefits": ["Sem Cafeína", "Treino Noturno", "Vasodilatação", "Sem Glúten"],
+      "brand": "DCX Nutrition",
+      "badge": "NOVO"
     },
     "Pré-treino BOPE (Frutas Amarelas) 150g": {
-      "id": "bope-frutas-amarelas",
       "category": "Pré-Treino",
       "description": "O B.O.P.E da Black Skull é um pré-treino formulado para aumentar a disposição e o rendimento em treinos de alta intensidade. Contém Cafeína, Creatina Monohidratada, Arginina e Taurina. Misture 1 colher de chá em 150ml de água, 30 minutos antes do treino. Não contém glúten.",
-      "benefits": ["Com Creatina", "Energia", "Força", "Black Skull"]
+      "benefits": ["Com Creatina", "Energia", "Força", "Black Skull"],
+      "brand": "Black Skull"
     },
     "Pré-treino BOPE (Limão) 300g": {
-      "id": "bope-limao",
       "category": "Pré-Treino",
       "description": "O B.O.P.E da Black Skull é um pré-treino formulado para aumentar a disposição e o rendimento em treinos de alta intensidade. Contém Cafeína, Creatina Monohidratada, Arginina e Taurina. Versão 300g no sabor limão, rendendo o dobro de doses. Não contém glúten.",
-      "benefits": ["Com Creatina", "Energia", "Rendimento Dobro", "Black Skull"]
+      "benefits": ["Com Creatina", "Energia", "Rendimento Dobro", "Black Skull"],
+      "brand": "Black Skull"
     },
     "D-Methylex": {
-      "id": "d-methylex",
       "category": "Termogênico",
       "description": "O Dimethylex da Under Labz é um termogênico em cápsulas com tecnologia Burn Matrix™. Contém 400mg de cafeína, extrato de laranja moro, L-carnitina, café verde, guaraná, picolinato de cromo e pimenta caiena. Atua na queima de gordura, aceleração do metabolismo, controle do apetite e como diurético.",
-      "benefits": ["Queima de Gordura", "400mg Cafeína", "Inibidor de Apetite", "Diurético"]
+      "benefits": ["Queima de Gordura", "400mg Cafeína", "Inibidor de Apetite", "Diurético"],
+      "brand": "Under Labz",
+      "badge": "HOT"
     },
     "Kratos Black": {
-      "id": "kratos-black",
       "category": "Termogênico",
       "description": "O Kratos Black da DCX Nutrition é um termogênico em cápsulas formulado com Extrato de Laranja Moro (500mg), Cafeína Anidra, Guaraná, Inositol, Pimenta, Gengibre, Canela e Coenzima Q10. Auxilia na aceleração do metabolismo, queima de gordura, energia e foco mental. Frasco com 60 cápsulas.",
-      "benefits": ["Laranja Moro", "Metabolismo", "Definição", "60 Cápsulas"]
+      "benefits": ["Laranja Moro", "Metabolismo", "Definição", "60 Cápsulas"],
+      "brand": "DCX Nutrition"
     },
     "Thermo Extreme": {
-      "id": "thermo-extreme",
       "category": "Termogênico",
       "description": "O Thermo Extreme da DCX Nutrition é um termogênico de alta potência formulado para acelerar o metabolismo e auxiliar na queima de gordura. Contém uma combinação de cafeína, extrato de chá verde, guaraná e pimenta caiena para máxima termogênese. Ideal para quem busca definição muscular e energia extra.",
-      "benefits": ["Termogênico", "Queima de Gordura", "Energia", "Definição"]
+      "benefits": ["Termogênico", "Queima de Gordura", "Energia", "Definição"],
+      "brand": "DCX Nutrition"
     },
     "Thermo-X c/ cafeína (Frutas Amarelas)": {
-      "id": "thermo-x-cafeina",
       "category": "Termogênico 4 em 1",
       "description": "O Thermo-X da DCX Nutrition é um suplemento multifuncional 4 em 1: emagrecedor, diurético, inibidor de apetite e pré-treino. Sua fórmula com 27 ingredientes inclui Cafeína, Café Verde, Guaraná, Pimenta Caiena, L-Tirosina, Taurina, Psyllium e Coenzima Q10. Disponível nas versões com e sem cafeína.",
-      "benefits": ["4 em 1", "27 Ingredientes", "Diurético", "Inibidor de Apetite"]
+      "benefits": ["4 em 1", "27 Ingredientes", "Diurético", "Inibidor de Apetite"],
+      "brand": "DCX Nutrition"
     },
     "Diuretic (Frutas Amarelas) 225g": {
-      "id": "diuretic-frutas-amarelas",
       "category": "Diurético",
       "description": "O Diuretic da DCX Nutrition é um suplemento em pó desenvolvido para auxiliar na eliminação da retenção de líquidos. Formulado com Chá Verde, Carqueja, Guaraná, Erva-Mate, Gengibre, Alecrim e Sálvia — diuréticos naturais que ajudam na definição corporal e redução do inchaço. Sem glúten.",
-      "benefits": ["Diurético Natural", "Anti-Inchaço", "Definição", "Sem Glúten"]
+      "benefits": ["Diurético Natural", "Anti-Inchaço", "Definição", "Sem Glúten"],
+      "brand": "DCX Nutrition"
     },
     "Whey 100% Gourmet (Choco Branco) 900g": {
-      "id": "whey-gourmet",
       "category": "Whey Protein",
       "description": "O Whey 100% Gourmet da DCX Nutrition é uma proteína concentrada (WPC) com matéria-prima importada. Fornece 20g de proteína por dose, além de 3,3g de Glutamina e 4,7g de BCAA naturais. Adoçado com Stévia e sem glúten. Foco em sabor premium gourmet com alta performance nutricional.",
-      "benefits": ["20g Proteína", "BCAA 4,7g", "Glutamina", "Sem Glúten"]
+      "benefits": ["20g Proteína", "BCAA 4,7g", "Glutamina", "Sem Glúten"],
+      "brand": "DCX Nutrition",
+      "badge": "MAIS VENDIDO"
     },
     "Whey High (Morango) 900g": {
-      "id": "whey-high-morango",
       "category": "Whey Protein",
       "description": "O Whey High Protein da Absolut Nutrition oferece 23g de proteína por dose com 3,6g de BCAA naturais. Enriquecido com Glutamina Peptídeo para reparação muscular e suporte imunológico. Fórmula livre de soja, ideal para o pós-treino ou complementação proteica ao longo do dia.",
-      "benefits": ["23g Proteína", "BCAA 3,6g", "Glutamina Peptídeo", "Sem Soja"]
+      "benefits": ["23g Proteína", "BCAA 3,6g", "Glutamina Peptídeo", "Sem Soja"],
+      "brand": "Absolut"
     },
     "Whey High (Baunilha) 900g": {
-      "id": "whey-high-baunilha",
       "category": "Whey Protein",
       "description": "O Whey High Protein da Absolut Nutrition na versão baunilha oferece 23g de proteína por dose com 3,6g de BCAA naturais. Enriquecido com Glutamina Peptídeo para reparação muscular. Versátil para receitas, shakes e consumo direto no pós-treino.",
-      "benefits": ["23g Proteína", "BCAA 3,6g", "Versatilidade", "Recuperação"]
+      "benefits": ["23g Proteína", "BCAA 3,6g", "Versatilidade", "Recuperação"],
+      "brand": "Absolut"
     },
     "Whey 100% 900g": {
-      "id": "whey-nutrata",
       "category": "Whey Protein",
       "description": "O Whey 100% da Nutrata é uma proteína concentrada do soro do leite de alta qualidade. Produzido com matéria-prima premium, fornece um excelente perfil de aminoácidos essenciais para auxiliar na recuperação muscular e no ganho de massa magra. Disponível em diversos sabores.",
-      "benefits": ["Alta Qualidade", "Aminoácidos Essenciais", "Massa Magra", "Nutrata"]
+      "benefits": ["Alta Qualidade", "Aminoácidos Essenciais", "Massa Magra", "Nutrata"],
+      "brand": "Nutrata"
     },
     "Whey Black Skull 900g": {
-      "id": "whey-black-skull",
       "category": "Whey Protein",
       "description": "O Whey Protein da Black Skull é uma das referências do mercado de suplementos. Proteína concentrada de alta absorção que fornece aminoácidos essenciais para construção e recuperação muscular pós-treino. Marca reconhecida mundialmente pela qualidade e tradição.",
-      "benefits": ["Marca Premium", "Alta Absorção", "Recuperação", "Tradição"]
+      "benefits": ["Marca Premium", "Alta Absorção", "Recuperação", "Tradição"],
+      "brand": "Black Skull"
     },
     "Protein Crush (Chocobear) 900g": {
-      "id": "protein-crush-chocobear",
       "category": "Whey Protein",
       "description": "O Protein Crush da Under Labz combina WPC e MPC para um perfil de aminoácidos robusto. Enriquecido com Coenzima Q10, Zinco, Vitaminas do Complexo B e Biotina. Avaliado pelo método DIAAS de alta aproveitamento proteico. Sabor gourmet Chocobear com textura cremosa e ótima dissolução.",
-      "benefits": ["Coenzima Q10", "Alto DIAAS", "Sabor Gourmet", "Zinco + Vit B"]
+      "benefits": ["Coenzima Q10", "Alto DIAAS", "Sabor Gourmet", "Zinco + Vit B"],
+      "brand": "Under Labz",
+      "badge": "NOVO"
     },
     "Protein Crush (Dulce de Leche) 900g": {
-      "id": "protein-crush-dulce",
       "category": "Whey Protein",
       "description": "O Protein Crush da Under Labz na versão Dulce de Leche combina WPC e MPC enriquecido com Coenzima Q10 para energia celular, Zinco para imunidade e vitaminas do Complexo B. Sabor irresistível de doce de leite com textura cremosa e excelente dissolução.",
-      "benefits": ["Coenzima Q10", "Sabor Dulce de Leche", "Zinco", "Biotina"]
+      "benefits": ["Coenzima Q10", "Sabor Dulce de Leche", "Zinco", "Biotina"],
+      "brand": "Under Labz"
     },
     "Protein Crush (Strawbear Swiss) 900g": {
-      "id": "protein-crush-strawbear",
       "category": "Whey Protein",
       "description": "O Protein Crush da Under Labz na versão Strawbear Swiss traz o sabor premium de morango suíço com a mesma fórmula avançada: WPC + MPC enriquecido com Coenzima Q10, Zinco e Vitaminas B. Alta taxa de aproveitamento proteico pelo método DIAAS.",
-      "benefits": ["Coenzima Q10", "Sabor Premium", "Alto DIAAS", "Vitaminas B"]
+      "benefits": ["Coenzima Q10", "Sabor Premium", "Alto DIAAS", "Vitaminas B"],
+      "brand": "Under Labz"
     },
     "Mass Up (Baunilha) 3kg": {
-      "id": "mass-up-baunilha",
       "category": "Hipercalórico",
       "description": "O Mass Up da Grow Up é um hipercalórico desenvolvido para quem busca ganho de peso e massa muscular. Combina carboidratos de alta densidade calórica com proteínas de alto valor biológico (whey protein) e um mix de vitaminas e minerais. Ideal para ectomorfos e atletas com alto gasto calórico.",
-      "benefits": ["Hipercalórico", "3kg", "Ganho de Massa", "Vitaminas"]
+      "benefits": ["Hipercalórico", "3kg", "Ganho de Massa", "Vitaminas"],
+      "brand": "Grow Up"
     },
     "Mass Up (Morango) 3kg": {
-      "id": "mass-up-morango",
       "category": "Hipercalórico",
       "description": "O Mass Up da Grow Up na versão morango 3kg oferece alta densidade calórica para quem precisa de superávit energético. Formulado com carboidratos, whey protein e vitaminas. Prático para complementar a dieta de quem não consegue atingir as calorias necessárias apenas com alimentação sólida.",
-      "benefits": ["Hipercalórico", "3kg", "Superávit Calórico", "Praticidade"]
+      "benefits": ["Hipercalórico", "3kg", "Superávit Calórico", "Praticidade"],
+      "brand": "Grow Up"
     },
     "Creatina 100% Pura 100g (DCX)": {
-      "id": "creatina-dcx-100g",
       "category": "Creatina",
       "description": "A Creatina 100% Pura da DCX Nutrition é creatina monohidratada de alta pureza. Auxilia no aumento da força, potência e volume muscular durante exercícios de alta intensidade. Formato de 100g ideal para quem quer conhecer o produto. Sem sabor, mistura facilmente em qualquer bebida.",
-      "benefits": ["100% Pura", "Força", "Potência", "Fácil Dissolução"]
+      "benefits": ["100% Pura", "Força", "Potência", "Fácil Dissolução"],
+      "brand": "DCX Nutrition",
+      "badge": "MAIS VENDIDO"
     },
     "Creatina 100% Pura 300g": {
-      "id": "creatina-dcx-300g",
       "category": "Creatina",
       "description": "A Creatina 100% Pura da DCX Nutrition em embalagem de 300g oferece melhor custo-benefício. Creatina monohidratada que auxilia no ganho de força, resistência e performance em treinos de alta intensidade. Formato econômico que rende aproximadamente 60 doses de 5g.",
-      "benefits": ["300g Econômico", "60 Doses", "Força", "Performance"]
+      "benefits": ["300g Econômico", "60 Doses", "Força", "Performance"],
+      "brand": "DCX Nutrition"
     },
     "Creatina Refil 500g": {
-      "id": "creatina-refil-500g",
       "category": "Creatina",
       "description": "A Creatina Refil 500g da DCX Nutrition é a opção mais econômica para uso contínuo. Creatina monohidratada 100% pura em embalagem refil que rende aproximadamente 100 doses. Suplemento essencial para ganho de força, potência muscular e melhora da performance nos treinos.",
-      "benefits": ["500g Refil", "100 Doses", "Melhor Custo", "Uso Contínuo"]
+      "benefits": ["500g Refil", "100 Doses", "Melhor Custo", "Uso Contínuo"],
+      "brand": "DCX Nutrition"
     },
     "Creatine Pure 300g": {
-      "id": "creatine-pure-skull",
       "category": "Creatina",
       "description": "A Creatine Pure da Black Skull é creatina monohidratada com o selo de qualidade de uma das marcas mais reconhecidas do mundo. Auxilia no aumento da força, potência e massa muscular. Não contém glúten e é livre de qualquer aditivo. 300g de creatina pura.",
-      "benefits": ["Black Skull", "Pura", "Sem Aditivos", "300g"]
+      "benefits": ["Black Skull", "Pura", "Sem Aditivos", "300g"],
+      "brand": "Black Skull"
     },
     "Beta Alanina 100g": {
-      "id": "beta-alanina",
       "category": "Aminoácido",
       "description": "A Beta Alanina da Black Skull é um aminoácido que auxilia no aumento da resistência muscular durante exercícios de alta intensidade. Atua na produção de carnosina, que reduz a acidez muscular e retarda a fadiga. Essencial para treinos longos e de alta repetição.",
-      "benefits": ["Resistência", "Anti-Fadiga", "Carnosina", "Black Skull"]
+      "benefits": ["Resistência", "Anti-Fadiga", "Carnosina", "Black Skull"],
+      "brand": "Black Skull"
     },
     "Creatina 100% Pura 100g (Grow Up)": {
-      "id": "creatina-growup-100g",
       "category": "Creatina",
       "description": "A Creatina 100% Pura da Grow Up é creatina monohidratada de alto grau de pureza. Auxilia no aumento de força e desempenho em treinos intensos. A creatina é o suplemento mais estudado e comprovado cientificamente para ganho de performance. Formato de 100g.",
-      "benefits": ["100% Pura", "Cientificamente Comprovada", "Grow Up", "Força"]
+      "benefits": ["100% Pura", "Cientificamente Comprovada", "Grow Up", "Força"],
+      "brand": "Grow Up"
     },
     "Mult X": {
-      "id": "mult-x",
       "category": "Multivitamínico",
       "description": "O Mult X da DCX Nutrition é um suplemento multivitamínico e multimineral completo, formulado para suprir as necessidades diárias de vitaminas e minerais. Ideal para atletas e praticantes de atividades físicas que necessitam de aporte nutricional extra para manter a saúde e a performance em dia.",
-      "benefits": ["Multivitamínico", "Multi-Mineral", "Saúde Completa", "Performance"]
+      "benefits": ["Multivitamínico", "Multi-Mineral", "Saúde Completa", "Performance"],
+      "brand": "DCX Nutrition"
     },
     "Testi 1000GH": {
-      "id": "testi-1000gh",
       "category": "Hormonal",
       "description": "O Testi 1000GH da DCX Nutrition é um suplemento formulado para auxiliar na otimização dos níveis hormonais de forma natural. Contém ingredientes que apoiam a produção de testosterona e hormônio do crescimento (GH), contribuindo para ganho de massa magra, força e disposição.",
-      "benefits": ["Testosterona", "GH Natural", "Massa Magra", "Disposição"]
+      "benefits": ["Testosterona", "GH Natural", "Massa Magra", "Disposição"],
+      "brand": "DCX Nutrition"
     },
     "T-DALA X": {
-      "id": "t-dala-x",
       "category": "Performance",
       "description": "O T-DALA X da DCX Nutrition é um suplemento desenvolvido para otimizar a performance masculina e o bem-estar geral. Sua fórmula atua no suporte à circulação sanguínea, energia e disposição. Indicado para homens que buscam melhorar a qualidade de vida e o desempenho físico.",
-      "benefits": ["Performance", "Circulação", "Energia", "Bem-Estar"]
+      "benefits": ["Performance", "Circulação", "Energia", "Bem-Estar"],
+      "brand": "DCX Nutrition"
     },
     "Colagen II Condroitina + Glucosamina": {
-      "id": "colagen-ii",
       "category": "Articulações",
       "description": "O Colagen II da Bionatus Pharma combina Colágeno Tipo II, Condroitina e Glucosamina — três nutrientes essenciais para a saúde das articulações. Auxilia na manutenção da cartilagem, redução do desconforto articular e melhora da mobilidade. Ideal para atletas e pessoas com desgaste articular.",
-      "benefits": ["Colágeno Tipo II", "Articulações", "Condroitina", "Mobilidade"]
+      "benefits": ["Colágeno Tipo II", "Articulações", "Condroitina", "Mobilidade"],
+      "brand": "Bionatus Pharma"
     },
     "Megapoli A-Z": {
-      "id": "megapoli-az",
       "category": "Multivitamínico",
       "description": "O Megapoli A-Z da Bionatus Pharma é um suplemento polivitamínico e mineral completo, que fornece de A a Z tudo o que o corpo precisa. Contém vitaminas essenciais e minerais importantes para o sistema imunológico, metabolismo energético e saúde geral do organismo.",
-      "benefits": ["Vitaminas A-Z", "Minerais", "Imunidade", "Saúde Geral"]
+      "benefits": ["Vitaminas A-Z", "Minerais", "Imunidade", "Saúde Geral"],
+      "brand": "Bionatus Pharma"
     },
     "Acetilcisteina 600mg + Vit C + D3 + ZINC": {
-      "id": "acetilcisteina",
       "category": "Imunidade",
       "description": "A Acetilcisteina 600mg da Katigua é um suplemento que combina N-Acetilcisteína com Vitamina C, Vitamina D3 e Zinco. Essa combinação potente atua na proteção das células contra o estresse oxidativo, fortalecimento do sistema imunológico e suporte à saúde respiratória.",
-      "benefits": ["Imunidade", "Antioxidante", "Vitamina D3", "Zinco"]
+      "benefits": ["Imunidade", "Antioxidante", "Vitamina D3", "Zinco"],
+      "brand": "Katigua"
     },
     "B12 Metilcobalamina": {
-      "id": "b12-metilcobalamina",
       "category": "Vitamina",
       "description": "A B12 Metilcobalamina da Katigua é a forma mais biodisponível de Vitamina B12. Essencial para o metabolismo energético, formação de células vermelhas do sangue e funcionamento do sistema nervoso. Indicada especialmente para pessoas com dietas restritivas e veganos.",
-      "benefits": ["Metilcobalamina", "Energia", "Sistema Nervoso", "Alta Absorção"]
+      "benefits": ["Metilcobalamina", "Energia", "Sistema Nervoso", "Alta Absorção"],
+      "brand": "Katigua"
     },
     "Pasta de Amendoim Choco Mix 600g": {
-      "id": "pasta-choco-mix",
       "category": "Pasta de Amendoim",
       "description": "A Pasta de Amendoim Choco Mix da DCX Nutrition é uma opção gourmet e nutritiva para quem quer aliar sabor e saúde. Rica em proteínas e gorduras boas do amendoim, com pedaços crocantes de chocolate. Ideal para café da manhã, pré-treino ou lanches intermediários. Zero açúcar adicionado.",
-      "benefits": ["Proteínas", "Gorduras Boas", "Com Chocolate", "Gourmet"]
+      "benefits": ["Proteínas", "Gorduras Boas", "Com Chocolate", "Gourmet"],
+      "brand": "DCX Nutrition"
     },
     "Pasta de Amendoim Leite em Pó 600g": {
-      "id": "pasta-leite-empo",
       "category": "Pasta de Amendoim",
       "description": "A Pasta de Amendoim Leite em Pó da DCX Nutrition combina a cremosidade do amendoim com o sabor irresistível de leite em pó. Rica em proteínas, fibras e gorduras saudáveis. Versátil para uso em receitas, smoothies, panquecas ou consumo direto. Fonte de energia para sua rotina.",
-      "benefits": ["Sabor Leite em Pó", "Proteínas", "Fibras", "Versátil"]
+      "benefits": ["Sabor Leite em Pó", "Proteínas", "Fibras", "Versátil"],
+      "brand": "DCX Nutrition",
+      "badge": "NOVO"
     },
     "Pasta de Amendoim Choco Kat 600g": {
-      "id": "pasta-choco-kat",
       "category": "Pasta de Amendoim",
       "description": "A Pasta de Amendoim Choco Kat da DCX Nutrition traz um sabor inspirado em chocolate com wafer, combinando amendoim moído com cacau e crocância. Rica em proteínas e gorduras boas, é perfeita para quem busca um lanche saudável sem abrir mão do sabor premium.",
-      "benefits": ["Sabor Choco Kat", "Crocante", "Proteínas", "Gorduras Boas"]
+      "benefits": ["Sabor Choco Kat", "Crocante", "Proteínas", "Gorduras Boas"],
+      "brand": "DCX Nutrition"
     },
     "Pasta de Amendoim Choco Bueno 600g": {
-      "id": "pasta-choco-bueno-600",
       "category": "Pasta de Amendoim",
       "description": "A Pasta de Amendoim Choco Bueno 600g da DCX Nutrition é inspirada no sabor de chocolate com avelã. Unindo o poder nutricional do amendoim com o sabor gourmet de chocolate europeu. Rica em proteínas, gorduras boas e fibras. Ideal para dietas com foco em ganho de massa.",
-      "benefits": ["Choco Bueno", "Avelã", "600g", "Ganho de Massa"]
+      "benefits": ["Choco Bueno", "Avelã", "600g", "Ganho de Massa"],
+      "brand": "DCX Nutrition",
+      "badge": "MAIS VENDIDO"
     },
     "Pasta de Amendoim Choco Bueno 250g": {
-      "id": "pasta-choco-bueno-250",
       "category": "Pasta de Amendoim",
       "description": "A versão compacta de 250g da Pasta de Amendoim Choco Bueno da DCX Nutrition é perfeita para experimentar ou levar na bolsa. Mesmo sabor premium de chocolate com avelã, rica em proteínas e gorduras saudáveis. Formato prático para o dia a dia.",
-      "benefits": ["Formato Prático", "250g", "Choco Bueno", "Para Levar"]
+      "benefits": ["Formato Prático", "250g", "Choco Bueno", "Para Levar"],
+      "brand": "DCX Nutrition"
     }
   }
 }
