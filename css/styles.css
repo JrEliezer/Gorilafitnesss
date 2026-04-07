@@ -599,6 +599,62 @@ body {
 .empty-state h3 { font-family: var(--font-heading); font-size: 1.2rem; margin-bottom: 0.4rem; color: #fff; }
 .empty-state p { font-size: 0.85rem; margin-bottom: 1.2rem; }
 
+/* ==================== VESTUARIO PROMO ==================== */
+.vestuario-promo {
+    padding: 2rem 1rem;
+    position: relative;
+    z-index: 1;
+}
+.vestuario-promo-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.vestuario-promo-inner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+}
+.vestuario-overline {
+    font-family: var(--font-heading);
+    font-size: 0.75rem;
+    color: var(--accent-green);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+.vestuario-promo-content h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(1.3rem, 5vw, 2rem);
+    color: #fff;
+    line-height: 1.2;
+    margin-bottom: 0.8rem;
+    letter-spacing: 0.5px;
+}
+.vestuario-subtitle {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.vestuario-promo .btn-primary {
+    font-size: 0.85rem;
+    padding: 0.8rem 1.5rem;
+}
+
 /* ==================== SOCIAL PROOF ==================== */
 .social-proof {
     padding: 2rem 1rem;
