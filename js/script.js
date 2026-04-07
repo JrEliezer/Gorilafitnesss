@@ -16,6 +16,10 @@
     imageFallback: 'assets/logo.png'
   };
 
+  function wa(text) {
+    return `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(text)}`;
+  }
+
   // ============================================================
   // Product Data
   // ============================================================
@@ -222,6 +226,22 @@
   function trackPageView() {
     trackEvent('page_view', { page_path: window.location.pathname, page_title: document.title });
   }
+
+  // ============================================================
+  // WhatsApp Link Centralization
+  // ============================================================
+  document.querySelectorAll('a[href*="wa.me"]:not(.modal-cta)').forEach(link => {
+    const msg = link.href.split('text=')[1];
+    if (msg) {
+      link.href = wa(decodeURIComponent(msg));
+    }
+  });
+
+  // Remove unnecessary target="_blank" from internal links
+  document.querySelectorAll('a[href$="vestuario.html"][target="_blank"]').forEach(link => {
+    link.removeAttribute('target');
+    link.removeAttribute('rel');
+  });
 
   // ============================================================
   // Noscript class removal

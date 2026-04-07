@@ -46,7 +46,7 @@ self.addEventListener('fetch', (event) => {
   const pathname = url.pathname;
 
   // Fonts - cache first
-  if (url.origin.includes('fonts.googleapis') || url.origin.includes('fonts.gstatic')) {
+  if (url.origin === 'https://fonts.googleapis.com' || url.origin === 'https://fonts.gstatic.com') {
     event.respondWith(caches.match(event.request).then((cached) => {
       return cached || fetch(event.request).then((response) => {
         if (response.ok) {
